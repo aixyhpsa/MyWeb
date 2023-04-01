@@ -1,0 +1,5 @@
+ftp -n -v >> out.txt <<!
+open 8.130.105.64
+user wucz eEhgxQdz-w9w8vY
+pwd
+!

@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/www/server/mysql/include"
+            ],
+            "defines": [],
+            //"compilerPath": "/usr/bin/gcc",
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "gnu17",
+            //"cppStandard": "gnu++14",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+            /*这行好像是下在makefile插件后才有的，我看up主都没有这一行
+            尝试删了，智能提示就恢复正常了*/
+            //"configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}

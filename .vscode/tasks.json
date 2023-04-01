@@ -1,0 +1,42 @@
+{
+    "tasks": [
+        /*
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++ 生成活动文件",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-std=c++1y"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        },
+        */
+        {
+            "type": "shell",    //使用shell作为command的输入地方，其他值我也不清楚。
+            "label": "make",    //标记task名字，launch.json和task.json中依赖的名字都是这个label。
+            "command": "make",    //在shell中输入的命令，这里make调用makefile中命令进行编译
+            "args": [            //command的参数
+                "-j"            //这里-j是让make按照多个线程并行编译。
+            ],
+            "options": {
+                "cwd": "${fileDirname}"    //该命令执行的绝对路径（必须是绝对路径），对于make命令来说，makefile应该事先在该路径下。${config:mypath}不是VSCode内置的变量名，在settings.json中定义。
+            }
+        }
+    ],
+    "version": "2.0.0"
+}

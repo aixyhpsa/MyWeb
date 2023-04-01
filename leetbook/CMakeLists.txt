@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 2.8)
+project(leetbook)
+
+add_definitions("-g")
+set(cppList 1.cpp)
+add_executable(1 ${cppList})
+add_executable(2 2.cpp)
+add_executable(3 3.cpp)
+add_executable(4 4.cpp)
+add_executable(12 12.cpp)
+add_executable(17 17.cpp)
+
+add_executable(test test.cpp)
+# target_link_libraries(test pthread)
+add_executable(writeMode writeMode.cpp)

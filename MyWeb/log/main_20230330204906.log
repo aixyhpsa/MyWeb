@@ -1,0 +1,240 @@
+2023-03-30 20:49:39 INFO  /home/wucz/test/MyWeb/main.cpp 45 
+GET / HTTP/1.1
+Host: dx191dya.com:5099
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Purpose: prefetch
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+
+2023-03-30 20:49:39 INFO  /home/wucz/test/MyWeb/main.cpp 67 index send
+2023-03-30 20:49:39 INFO  /home/wucz/test/MyWeb/main.cpp 45 
+GET /swiper-bundle.css HTTP/1.1
+Host: dx191dya.com:5099
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Purpose: prefetch
+Referer: http://dx191dya.com:5099/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+
+2023-03-30 20:49:39 INFO  /home/wucz/test/MyWeb/main.cpp 75 js or css send
+2023-03-30 20:49:39 INFO  /home/wucz/test/MyWeb/main.cpp 45 
+GET /swiper-bundle.js HTTP/1.1
+Host: dx191dya.com:5099
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Purpose: prefetch
+Referer: http://dx191dya.com:5099/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+
+2023-03-30 20:49:39 INFO  /home/wucz/test/MyWeb/main.cpp 75 js or css send
+2023-03-30 20:50:51 INFO  /home/wucz/test/MyWeb/main.cpp 45 
+GET / HTTP/1.1
+Host: dx191dya.com:5099
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+2023-03-30 20:50:51 INFO  /home/wucz/test/MyWeb/main.cpp 67 index send
+2023-03-30 20:50:51 INFO  /home/wucz/test/MyWeb/main.cpp 45 
+GET /swiper-bundle.css HTTP/1.1
+Host: dx191dya.com:5099
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://dx191dya.com:5099/
+
+
+2023-03-30 20:50:51 INFO  /home/wucz/test/MyWeb/main.cpp 75 js or css send
+2023-03-30 20:50:51 INFO  /home/wucz/test/MyWeb/main.cpp 45 
+GET /swiper-bundle.js HTTP/1.1
+Host: dx191dya.com:5099
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://dx191dya.com:5099/
+
+
+2023-03-30 20:50:51 INFO  /home/wucz/test/MyWeb/main.cpp 75 js or css send
+2023-03-30 20:51:46 INFO  /home/wucz/test/MyWeb/main.cpp 45 
+GET http://dx191dya.com:5099/ HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36
+Accept-Encoding: gzip, x-gzip, deflate
+Host: dx191dya.com:5099
+
+
+2023-03-30 20:58:56 INFO  /home/wucz/test/MyWeb/main.cpp 45 
+GET /t1.html HTTP/1.1
+Host: dx191dya.com:5099
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+
+2023-03-30 20:58:56 INFO  /home/wucz/test/MyWeb/main.cpp 75 js or css send
+2023-03-30 20:58:56 INFO  /home/wucz/test/MyWeb/main.cpp 45 
+GET /favicon.ico HTTP/1.1
+Host: dx191dya.com:5099
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://dx191dya.com:5099/t1.html
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+
+2023-03-30 20:58:56 INFO  /home/wucz/test/MyWeb/main.cpp 75 js or css send
+2023-03-30 21:01:28 INFO  /home/wucz/test/MyWeb/main.cpp 45 
+GET /t1.html HTTP/1.1
+Host: dx191dya.com:5099
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+
+2023-03-30 21:01:28 INFO  /home/wucz/test/MyWeb/main.cpp 75 js or css send
+2023-03-30 21:01:29 INFO  /home/wucz/test/MyWeb/main.cpp 45 
+GET /favicon.ico HTTP/1.1
+Host: dx191dya.com:5099
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://dx191dya.com:5099/t1.html
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+
+2023-03-30 21:01:29 INFO  /home/wucz/test/MyWeb/main.cpp 75 js or css send
+2023-03-30 21:11:51 INFO  /home/wucz/test/MyWeb/main.cpp 45 
+GET /t1.html HTTP/1.1
+Host: dx191dya.com:5099
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+
+2023-03-30 21:11:51 INFO  /home/wucz/test/MyWeb/main.cpp 75 js or css send
+2023-03-30 21:11:51 INFO  /home/wucz/test/MyWeb/main.cpp 45 
+GET /favicon.ico HTTP/1.1
+Host: dx191dya.com:5099
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://dx191dya.com:5099/t1.html
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+
+2023-03-30 21:11:51 INFO  /home/wucz/test/MyWeb/main.cpp 75 js or css send
+2023-03-30 21:12:11 INFO  /home/wucz/test/MyWeb/main.cpp 45 
+GET /t1.html HTTP/1.1
+Host: dx191dya.com:5099
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+
+2023-03-30 21:12:11 INFO  /home/wucz/test/MyWeb/main.cpp 75 js or css send
+2023-03-30 21:12:11 INFO  /home/wucz/test/MyWeb/main.cpp 45 
+GET /favicon.ico HTTP/1.1
+Host: dx191dya.com:5099
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://dx191dya.com:5099/t1.html
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+
+2023-03-30 21:12:11 INFO  /home/wucz/test/MyWeb/main.cpp 75 js or css send
+2023-03-30 21:14:17 INFO  /home/wucz/test/MyWeb/main.cpp 45 
+GET /favicon.ico HTTP/1.1
+Host: dx191dya.com:5099
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+
+2023-03-30 21:14:17 INFO  /home/wucz/test/MyWeb/main.cpp 75 js or css send
+2023-03-30 21:18:23 INFO  /home/wucz/test/MyWeb/main.cpp 45 
+GET /img03.jpg HTTP/1.1
+Host: dx191dya.com:5099
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+
+2023-03-30 21:18:23 INFO  /home/wucz/test/MyWeb/main.cpp 75 js or css send
+2023-03-30 21:19:19 INFO  /home/wucz/test/MyWeb/main.cpp 45 
+GET /t1.html HTTP/1.1
+Host: dx191dya.com:5099
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+
+2023-03-30 21:19:19 INFO  /home/wucz/test/MyWeb/main.cpp 75 js or css send
+2023-03-30 21:19:19 INFO  /home/wucz/test/MyWeb/main.cpp 45 
+GET /favicon.ico HTTP/1.1
+Host: dx191dya.com:5099
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://dx191dya.com:5099/t1.html
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+
+2023-03-30 21:19:19 INFO  /home/wucz/test/MyWeb/main.cpp 75 js or css send
+2023-03-30 21:19:19 INFO  /home/wucz/test/MyWeb/main.cpp 45 
+GET /img03.jpg HTTP/1.1
+Host: dx191dya.com:5099
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://dx191dya.com:5099/t1.html
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+
+2023-03-30 21:19:19 INFO  /home/wucz/test/MyWeb/main.cpp 75 js or css send

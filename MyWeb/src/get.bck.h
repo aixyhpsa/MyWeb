@@ -1,0 +1,30 @@
+#pragma once
+#include <fstream>
+#include <string>
+#include "tools/_http.h"
+
+namespace dya
+{
+////////////////////////////////////////////////////////////////////
+std::string getFileType();
+////////////////////////////////////////////////////////////////////
+class Get 
+{
+public :
+    Get(std::string &name);
+    Get(std::string &&name);
+    std::string getResponse();
+private :
+    std::ifstream m_fin;
+    std::string m_name;
+};
+////////////////////////////////////////////////////////////////////
+class Post
+{
+public :
+    std::string getResponse(const std::string &buff);
+private :
+    Http m_http;
+};
+////////////////////////////////////////////////////////////////////
+} 

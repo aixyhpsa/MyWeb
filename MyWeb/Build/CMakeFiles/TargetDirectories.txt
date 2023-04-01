@@ -1,0 +1,3 @@
+/home/wucz/test/MyWeb/Build/CMakeFiles/rebuild_cache.dir
+/home/wucz/test/MyWeb/Build/CMakeFiles/edit_cache.dir
+/home/wucz/test/MyWeb/Build/CMakeFiles/main.dir

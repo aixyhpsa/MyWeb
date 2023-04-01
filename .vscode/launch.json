@@ -1,0 +1,32 @@
+{
+    "version":"0.2.0",
+    "configurations":[
+        {
+            //name随便取，用来在定义了多个configuration的时候区分执行的是哪一套参数。
+            "name":"makefile", 
+            //这个一般就不要改了，这个我还不了解其他的参数配置
+            "type":"cppdbg",        
+            //这个一般就不要改了，这个我还不了解其他的参数配置
+            "request":"launch", 
+            //执行这个文件，相当于命令行中输入这行,千万不能只填fileBasenameNoExtension
+            //"program":"${fileDirname}/${fileBasenameNoExtension}",    
+            //cmake版
+            "program":"${fileDirname}/Build/${fileBasenameNoExtension}",    
+            //program的参数，相当于命令行中在program后输入用空格隔开的这些参数。
+            //"args":["param1","param2","2>&1",">","out"],    
+            //大概是表示是否在main函数处停下，类似在main上打断点
+            "stopAtEntry":false, 
+            //表示在哪个目录下执行program，相当于命令行中输入cd 该行
+            "cwd":"${fileDirname}",    
+            //使用哪个工具作为调试工具，只有两个选择gdb或lldb
+            "MIMode":"gdb",            
+            //调试工具的路径
+            "miDebuggerPath":"/usr/bin/gdb",    
+            //执行program前需要执行的task，这里需要和task.json中要执行的task的label一致
+            //"preLaunchTask":"make"    
+            //如果没有tasks.json，则可以这样写。或者直接不写
+            //这种情况是已经有带调试信息的可执行文件，不再通过编译得到了
+            //"preLaunchTask":""        
+        }
+    ]
+}

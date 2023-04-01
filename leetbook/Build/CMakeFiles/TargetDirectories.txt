@@ -1,0 +1,10 @@
+/home/wucz/test/leetbook/Build/CMakeFiles/rebuild_cache.dir
+/home/wucz/test/leetbook/Build/CMakeFiles/writeMode.dir
+/home/wucz/test/leetbook/Build/CMakeFiles/17.dir
+/home/wucz/test/leetbook/Build/CMakeFiles/12.dir
+/home/wucz/test/leetbook/Build/CMakeFiles/edit_cache.dir
+/home/wucz/test/leetbook/Build/CMakeFiles/test.dir
+/home/wucz/test/leetbook/Build/CMakeFiles/4.dir
+/home/wucz/test/leetbook/Build/CMakeFiles/2.dir
+/home/wucz/test/leetbook/Build/CMakeFiles/3.dir
+/home/wucz/test/leetbook/Build/CMakeFiles/1.dir

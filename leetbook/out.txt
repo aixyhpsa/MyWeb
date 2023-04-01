@@ -1,0 +1,6 @@
+Connected to 8.130.105.64 (8.130.105.64).
+220 (vsFTPd 3.0.3)
+331 Please specify the password.
+230 Login successful.
+257 "/var/ftp/test" is the current directory
+221 Goodbye.
