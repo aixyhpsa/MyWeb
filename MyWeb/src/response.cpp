@@ -3,6 +3,8 @@
 #include "../tools/_directory.h"
 #include "nlohmann/json.hpp"
 #include "login.h"
+#include "upload.h"
+#include "show.h"
 
 namespace dya
 {
@@ -25,6 +27,7 @@ umap<std::string, std::string> kFileType{
 ////////////////////////////////////////////////////////////////////
 constexpr char kHead_200[] = "HTTP/1.1 200 OK\r\n";
 constexpr char kHead_404[] = "HTTP/1.1 404 Not Found\r\n";
+constexpr char kHead_503[] = "HTTP/1.1 503 Service Unavailable\r\n";
 constexpr char kServer[] = "Server: dx191dya.com\r\n";
 constexpr char kAccess[] = "Access-Control-Allow-Origin: *\r\n";
 constexpr char kConnection[] = "Connection: keep-alive\r\n";
@@ -38,6 +41,11 @@ Get::Get(std::string &&name) : m_name(std::move(name)) {}
 
 std::string Get::getResponse()
 {
+    if (kRootPath[kRootPath.size()-1] != '/' && m_name[0] != '/')
+        m_name = kRootPath + "/" + m_name;
+    else
+        m_name = kRootPath + m_name;
+
     std::string ret;
     File f(m_name);
     m_fin.open(m_name, std::ios::binary);
@@ -95,39 +103,78 @@ std::string Post::getResponse()
     // 上传
     if (m_buff.compare(2, 2, "--") == 0)
     {
-        return {};
+        if (dya::Upload()(kUploadPath, m_buff))
+            return this->success("上传成功");
+        return this->error();
     }
 
     nlohmann::json jRet = nlohmann::json::parse(m_buff.c_str());
-
-    // 登录：{"accountNumber":"root", "password":"368751429QQ"}
-    if (jRet["accountNumber"] != "")
+    // 登录：{"accountNumber":"", "password":""}
+    if (jRet.find("accountNumber") != jRet.end())
     {
-        return {};
+        // 防SQL注入
+        dya::Login login("select count(password) from user where accountNumber=:1 and password=:2");
+        if (login(jRet["accountNumber"], jRet["password"]))
+            return this->success("登录成功");
+        return this->error();
     }
 
     // 添加留言：{"messageBoard":"XXX"}
-    if (jRet["messageBoard"] != "")
+    if (jRet.find("messageBoard") != jRet.end())
     {
-
         return {};
     }
 
     // 展示文件夹
+    // {"showList":"root"}
+    if (jRet.find("showList") != jRet.end())
+    {
+        if (jRet["showList"] == "rootPath")
+            return this->success(ShowFileList()(kUploadPath));
+        std::string name;
+        name.append(kUploadPath);
+        if (name[name.size()-1] != '/')
+            name.append("/");
+        name.append(jRet["showList"]);
+        return this->success(ShowFileList()(name));
+    }
 
     // 展示留言
-    return {};
+
+    // error修改
+    return this->error();
 }
 
-std::string Post::upload()
+std::string Post::success(const std::string &responseBody)
 {
-    // 从buff中找到文件名称
-    int beg = m_buff.find("filename=");
-    if (beg == -1)
-        return this->error();
-    beg = beg + sizeof(R"(filename=")");
-    int end = m_buff.find(R"(")", beg);
-    std::string fileName = m_buff.substr(beg, end-beg);
+    std::string ret;
+    ret.append(kHead_200);
+    ret.append(kAccess);
+    ret.append(kServer);
+    ret.append(kConnection);
+    ret.append(kContent_Type);
+    ret.append("text/plain");
+    ret.append(kContent_Type_charset);
+    ret.append(kContent_Length);
+    ret.append(std::to_string(responseBody.size()));
+    ret.append("\r\n\r\n");
+    ret.append(responseBody);
+    return ret;
+}
+
+std::string Post::error()
+{
+    std::string ret;
+    ret.append(kHead_503);
+    ret.append(kAccess);
+    ret.append(kContent_Length);
+    ret.append("71\r\n");
+    ret.append(kContent_Type);
+    ret.append("text/html");
+    ret.append(kContent_Type_charset);
+    ret.append("\r\n");
+    ret.append("<html><head>503</head><body><h1>Service Unavailable</h1></body></html>");
+    return ret;
 }
 ////////////////////////////////////////////////////////////////////
 } 

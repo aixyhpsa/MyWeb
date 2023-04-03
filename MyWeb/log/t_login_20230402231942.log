@@ -1,0 +1,1 @@
+2023-04-02 23:19:42 DEBUG /home/wucz/test/MyWeb/src/login.cpp 80 select count(password) from user where accountNumber="root" and password="1' or '1'='1";

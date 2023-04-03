@@ -1,6 +1,6 @@
 CMakeFiles/t_showlist.dir/t_showlist.cpp.o: \
  /home/wucz/test/MyWeb/test/t_showlist.cpp /usr/include/stdc-predef.h \
- /home/wucz/test/MyWeb/test/../src/upload.h /usr/include/c++/10/fstream \
+ /home/wucz/test/MyWeb/test/../src/show.h /usr/include/c++/10/fstream \
  /usr/include/c++/10/istream /usr/include/c++/10/ios \
  /usr/include/c++/10/iosfwd \
  /usr/include/c++/10/x86_64-redhat-linux/bits/c++config.h \
@@ -123,15 +123,15 @@ CMakeFiles/t_showlist.dir/t_showlist.cpp.o: \
  /usr/include/c++/10/x86_64-redhat-linux/bits/basic_file.h \
  /usr/include/c++/10/x86_64-redhat-linux/bits/c++io.h \
  /usr/include/c++/10/bits/fstream.tcc \
- /home/wucz/test/MyWeb/test/../tools/_directory.h /usr/include/sys/stat.h \
- /usr/include/bits/stat.h /usr/include/bits/statx.h \
- /usr/include/linux/stat.h /usr/include/linux/types.h \
- /usr/include/asm/types.h /usr/include/asm-generic/types.h \
- /usr/include/asm-generic/int-ll64.h /usr/include/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h /usr/include/asm/posix_types.h \
- /usr/include/asm/posix_types_64.h /usr/include/asm-generic/posix_types.h \
- /usr/include/bits/statx-generic.h \
+ /home/wucz/test/MyWeb/test/../src/../tools/_directory.h \
+ /usr/include/sys/stat.h /usr/include/bits/stat.h \
+ /usr/include/bits/statx.h /usr/include/linux/stat.h \
+ /usr/include/linux/types.h /usr/include/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/asm/bitsperlong.h /usr/include/asm-generic/bitsperlong.h \
+ /usr/include/linux/posix_types.h /usr/include/linux/stddef.h \
+ /usr/include/asm/posix_types.h /usr/include/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h /usr/include/bits/statx-generic.h \
  /usr/include/bits/types/struct_statx_timestamp.h \
  /usr/include/bits/types/struct_statx.h /usr/include/dirent.h \
  /usr/include/bits/dirent.h /usr/include/bits/posix1_lim.h \
@@ -158,4 +158,92 @@ CMakeFiles/t_showlist.dir/t_showlist.cpp.o: \
  /usr/include/c++/10/bits/stl_vector.h \
  /usr/include/c++/10/bits/stl_bvector.h \
  /usr/include/c++/10/bits/vector.tcc /usr/include/c++/10/cassert \
- /usr/include/assert.h /usr/include/c++/10/iostream
+ /usr/include/assert.h \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/json.hpp \
+ /usr/include/c++/10/algorithm /usr/include/c++/10/bits/stl_algo.h \
+ /usr/include/c++/10/bits/algorithmfwd.h \
+ /usr/include/c++/10/bits/stl_heap.h \
+ /usr/include/c++/10/bits/uniform_int_dist.h /usr/include/c++/10/limits \
+ /usr/include/c++/10/cstddef /usr/include/c++/10/functional \
+ /usr/include/c++/10/bits/std_function.h /usr/include/c++/10/iterator \
+ /usr/include/c++/10/bits/stream_iterator.h \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/adl_serializer.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/abi_macros.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/conversions/from_json.hpp \
+ /usr/include/c++/10/forward_list /usr/include/c++/10/bits/forward_list.h \
+ /usr/include/c++/10/bits/forward_list.tcc /usr/include/c++/10/map \
+ /usr/include/c++/10/bits/stl_tree.h /usr/include/c++/10/bits/stl_map.h \
+ /usr/include/c++/10/bits/stl_multimap.h \
+ /usr/include/c++/10/bits/erase_if.h /usr/include/c++/10/unordered_map \
+ /usr/include/c++/10/bits/hashtable.h \
+ /usr/include/c++/10/bits/hashtable_policy.h \
+ /usr/include/c++/10/bits/unordered_map.h /usr/include/c++/10/valarray \
+ /usr/include/c++/10/cmath /usr/include/math.h \
+ /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
+ /usr/include/bits/fp-fast.h \
+ /usr/include/bits/mathcalls-helper-functions.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
+ /usr/include/bits/iscanonical.h \
+ /usr/include/c++/10/bits/valarray_array.h \
+ /usr/include/c++/10/bits/valarray_array.tcc \
+ /usr/include/c++/10/bits/valarray_before.h \
+ /usr/include/c++/10/bits/slice_array.h \
+ /usr/include/c++/10/bits/valarray_after.h \
+ /usr/include/c++/10/bits/gslice.h \
+ /usr/include/c++/10/bits/gslice_array.h \
+ /usr/include/c++/10/bits/mask_array.h \
+ /usr/include/c++/10/bits/indirect_array.h \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/exceptions.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/value_t.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/macro_scope.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/meta/detected.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/meta/void_t.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/thirdparty/hedley/hedley.hpp \
+ /usr/include/c++/10/version \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/string_escape.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/input/position_t.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/meta/cpp_future.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/meta/type_traits.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/iterators/iterator_traits.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/meta/call_std/begin.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/meta/call_std/end.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/json_fwd.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/string_concat.hpp \
+ /usr/include/c++/10/cstring /usr/include/string.h /usr/include/strings.h \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/meta/identity_tag.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/meta/std_fs.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/conversions/to_json.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/iterators/iteration_proxy.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/byte_container_with_subtype.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/hash.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/input/binary_reader.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/input/input_adapters.hpp \
+ /usr/include/c++/10/numeric /usr/include/c++/10/bits/stl_numeric.h \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/input/json_sax.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/input/lexer.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/meta/is_sax.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/input/parser.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/iterators/internal_iterator.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/iterators/primitive_iterator.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/iterators/iter_impl.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/iterators/json_reverse_iterator.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/json_custom_base_class.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/json_pointer.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/json_ref.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/output/binary_writer.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/output/output_adapters.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/output/serializer.hpp \
+ /usr/include/c++/10/iomanip /usr/include/c++/10/locale \
+ /usr/include/c++/10/bits/locale_facets_nonio.h /usr/include/c++/10/ctime \
+ /usr/include/c++/10/x86_64-redhat-linux/bits/time_members.h \
+ /usr/include/c++/10/x86_64-redhat-linux/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/10/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/10/bits/locale_conv.h \
+ /usr/include/c++/10/bits/quoted_string.h /usr/include/c++/10/sstream \
+ /usr/include/c++/10/bits/sstream.tcc \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/conversions/to_chars.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/ordered_map.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/macro_unscope.hpp \
+ /home/wucz/test/MyWeb/test/../tools/nlohmann/thirdparty/hedley/hedley_undef.hpp \
+ /usr/include/c++/10/iostream

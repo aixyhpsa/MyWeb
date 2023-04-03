@@ -10,8 +10,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/wucz/test/MyWeb/src/upload.cpp" "CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/src/upload.cpp.o" "gcc" "CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/src/upload.cpp.o.d"
   "/home/wucz/test/MyWeb/tools/_directory.cpp" "CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o" "gcc" "CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o.d"
-  "/home/wucz/test/MyWeb/tools/_json.cpp" "CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.o" "gcc" "CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.o.d"
-  "/home/wucz/test/MyWeb/tools/yyjson.cpp" "CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.o" "gcc" "CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.o.d"
   "/home/wucz/test/MyWeb/test/t_upload.cpp" "CMakeFiles/t_upload.dir/t_upload.cpp.o" "gcc" "CMakeFiles/t_upload.dir/t_upload.cpp.o.d"
   )
 

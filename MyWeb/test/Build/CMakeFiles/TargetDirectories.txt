@@ -1,5 +1,5 @@
 /home/wucz/test/MyWeb/test/Build/CMakeFiles/edit_cache.dir
-/home/wucz/test/MyWeb/test/Build/CMakeFiles/t_get.dir
+/home/wucz/test/MyWeb/test/Build/CMakeFiles/t_post.dir
 /home/wucz/test/MyWeb/test/Build/CMakeFiles/t_showlist.dir
 /home/wucz/test/MyWeb/test/Build/CMakeFiles/t_upload.dir
 /home/wucz/test/MyWeb/test/Build/CMakeFiles/t_dir.dir

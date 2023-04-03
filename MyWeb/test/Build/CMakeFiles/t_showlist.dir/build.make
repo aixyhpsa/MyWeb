@@ -83,19 +83,19 @@ CMakeFiles/t_showlist.dir/t_showlist.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/t_showlist.dir/t_showlist.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wucz/test/MyWeb/test/t_showlist.cpp -o CMakeFiles/t_showlist.dir/t_showlist.cpp.s
 
-CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/upload.cpp.o: CMakeFiles/t_showlist.dir/flags.make
-CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/upload.cpp.o: /home/wucz/test/MyWeb/src/upload.cpp
-CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/upload.cpp.o: CMakeFiles/t_showlist.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wucz/test/MyWeb/test/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/upload.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/upload.cpp.o -MF CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/upload.cpp.o.d -o CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/upload.cpp.o -c /home/wucz/test/MyWeb/src/upload.cpp
+CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/show.cpp.o: CMakeFiles/t_showlist.dir/flags.make
+CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/show.cpp.o: /home/wucz/test/MyWeb/src/show.cpp
+CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/show.cpp.o: CMakeFiles/t_showlist.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wucz/test/MyWeb/test/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/show.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/show.cpp.o -MF CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/show.cpp.o.d -o CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/show.cpp.o -c /home/wucz/test/MyWeb/src/show.cpp
 
-CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/upload.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/upload.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wucz/test/MyWeb/src/upload.cpp > CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/upload.cpp.i
+CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/show.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/show.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wucz/test/MyWeb/src/show.cpp > CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/show.cpp.i
 
-CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/upload.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/upload.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wucz/test/MyWeb/src/upload.cpp -o CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/upload.cpp.s
+CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/show.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/show.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wucz/test/MyWeb/src/show.cpp -o CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/show.cpp.s
 
 CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o: CMakeFiles/t_showlist.dir/flags.make
 CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o: /home/wucz/test/MyWeb/tools/_directory.cpp
@@ -114,14 +114,14 @@ CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/tools/_directory.cpp.s: cmake_for
 # Object files for target t_showlist
 t_showlist_OBJECTS = \
 "CMakeFiles/t_showlist.dir/t_showlist.cpp.o" \
-"CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/upload.cpp.o" \
+"CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/show.cpp.o" \
 "CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o"
 
 # External object files for target t_showlist
 t_showlist_EXTERNAL_OBJECTS =
 
 t_showlist: CMakeFiles/t_showlist.dir/t_showlist.cpp.o
-t_showlist: CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/upload.cpp.o
+t_showlist: CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/show.cpp.o
 t_showlist: CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o
 t_showlist: CMakeFiles/t_showlist.dir/build.make
 t_showlist: CMakeFiles/t_showlist.dir/link.txt

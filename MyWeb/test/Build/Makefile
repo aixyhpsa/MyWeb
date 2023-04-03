@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named t_get
+# Target rules for targets named t_post
 
 # Build rule for target.
-t_get: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 t_get
-.PHONY : t_get
+t_post: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 t_post
+.PHONY : t_post
 
 # fast build rule for target.
-t_get/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_get.dir/build.make CMakeFiles/t_get.dir/build
-.PHONY : t_get/fast
+t_post/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/build
+.PHONY : t_post/fast
 
 #=============================================================================
 # Target rules for targets named t_showlist
@@ -186,6 +186,7 @@ home/wucz/test/MyWeb/src/login.o: home/wucz/test/MyWeb/src/login.cpp.o
 
 # target to build an object file
 home/wucz/test/MyWeb/src/login.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/src/login.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_login.dir/build.make CMakeFiles/t_login.dir/home/wucz/test/MyWeb/src/login.cpp.o
 .PHONY : home/wucz/test/MyWeb/src/login.cpp.o
 
@@ -194,6 +195,7 @@ home/wucz/test/MyWeb/src/login.i: home/wucz/test/MyWeb/src/login.cpp.i
 
 # target to preprocess a source file
 home/wucz/test/MyWeb/src/login.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/src/login.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_login.dir/build.make CMakeFiles/t_login.dir/home/wucz/test/MyWeb/src/login.cpp.i
 .PHONY : home/wucz/test/MyWeb/src/login.cpp.i
 
@@ -202,6 +204,7 @@ home/wucz/test/MyWeb/src/login.s: home/wucz/test/MyWeb/src/login.cpp.s
 
 # target to generate assembly for a file
 home/wucz/test/MyWeb/src/login.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/src/login.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_login.dir/build.make CMakeFiles/t_login.dir/home/wucz/test/MyWeb/src/login.cpp.s
 .PHONY : home/wucz/test/MyWeb/src/login.cpp.s
 
@@ -210,7 +213,7 @@ home/wucz/test/MyWeb/src/response.o: home/wucz/test/MyWeb/src/response.cpp.o
 
 # target to build an object file
 home/wucz/test/MyWeb/src/response.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_get.dir/build.make CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/response.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/src/response.cpp.o
 .PHONY : home/wucz/test/MyWeb/src/response.cpp.o
 
 home/wucz/test/MyWeb/src/response.i: home/wucz/test/MyWeb/src/response.cpp.i
@@ -218,7 +221,7 @@ home/wucz/test/MyWeb/src/response.i: home/wucz/test/MyWeb/src/response.cpp.i
 
 # target to preprocess a source file
 home/wucz/test/MyWeb/src/response.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_get.dir/build.make CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/response.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/src/response.cpp.i
 .PHONY : home/wucz/test/MyWeb/src/response.cpp.i
 
 home/wucz/test/MyWeb/src/response.s: home/wucz/test/MyWeb/src/response.cpp.s
@@ -226,15 +229,42 @@ home/wucz/test/MyWeb/src/response.s: home/wucz/test/MyWeb/src/response.cpp.s
 
 # target to generate assembly for a file
 home/wucz/test/MyWeb/src/response.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_get.dir/build.make CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/response.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/src/response.cpp.s
 .PHONY : home/wucz/test/MyWeb/src/response.cpp.s
+
+home/wucz/test/MyWeb/src/show.o: home/wucz/test/MyWeb/src/show.cpp.o
+.PHONY : home/wucz/test/MyWeb/src/show.o
+
+# target to build an object file
+home/wucz/test/MyWeb/src/show.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/src/show.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_showlist.dir/build.make CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/show.cpp.o
+.PHONY : home/wucz/test/MyWeb/src/show.cpp.o
+
+home/wucz/test/MyWeb/src/show.i: home/wucz/test/MyWeb/src/show.cpp.i
+.PHONY : home/wucz/test/MyWeb/src/show.i
+
+# target to preprocess a source file
+home/wucz/test/MyWeb/src/show.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/src/show.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_showlist.dir/build.make CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/show.cpp.i
+.PHONY : home/wucz/test/MyWeb/src/show.cpp.i
+
+home/wucz/test/MyWeb/src/show.s: home/wucz/test/MyWeb/src/show.cpp.s
+.PHONY : home/wucz/test/MyWeb/src/show.s
+
+# target to generate assembly for a file
+home/wucz/test/MyWeb/src/show.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/src/show.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_showlist.dir/build.make CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/show.cpp.s
+.PHONY : home/wucz/test/MyWeb/src/show.cpp.s
 
 home/wucz/test/MyWeb/src/upload.o: home/wucz/test/MyWeb/src/upload.cpp.o
 .PHONY : home/wucz/test/MyWeb/src/upload.o
 
 # target to build an object file
 home/wucz/test/MyWeb/src/upload.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_showlist.dir/build.make CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/upload.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/src/upload.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_upload.dir/build.make CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/src/upload.cpp.o
 .PHONY : home/wucz/test/MyWeb/src/upload.cpp.o
 
@@ -243,7 +273,7 @@ home/wucz/test/MyWeb/src/upload.i: home/wucz/test/MyWeb/src/upload.cpp.i
 
 # target to preprocess a source file
 home/wucz/test/MyWeb/src/upload.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_showlist.dir/build.make CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/upload.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/src/upload.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_upload.dir/build.make CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/src/upload.cpp.i
 .PHONY : home/wucz/test/MyWeb/src/upload.cpp.i
 
@@ -252,7 +282,7 @@ home/wucz/test/MyWeb/src/upload.s: home/wucz/test/MyWeb/src/upload.cpp.s
 
 # target to generate assembly for a file
 home/wucz/test/MyWeb/src/upload.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_showlist.dir/build.make CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/upload.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/src/upload.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_upload.dir/build.make CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/src/upload.cpp.s
 .PHONY : home/wucz/test/MyWeb/src/upload.cpp.s
 
@@ -261,6 +291,7 @@ home/wucz/test/MyWeb/tools/_dbpool.o: home/wucz/test/MyWeb/tools/_dbpool.cpp.o
 
 # target to build an object file
 home/wucz/test/MyWeb/tools/_dbpool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/tools/_dbpool.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_login.dir/build.make CMakeFiles/t_login.dir/home/wucz/test/MyWeb/tools/_dbpool.cpp.o
 .PHONY : home/wucz/test/MyWeb/tools/_dbpool.cpp.o
 
@@ -269,6 +300,7 @@ home/wucz/test/MyWeb/tools/_dbpool.i: home/wucz/test/MyWeb/tools/_dbpool.cpp.i
 
 # target to preprocess a source file
 home/wucz/test/MyWeb/tools/_dbpool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/tools/_dbpool.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_login.dir/build.make CMakeFiles/t_login.dir/home/wucz/test/MyWeb/tools/_dbpool.cpp.i
 .PHONY : home/wucz/test/MyWeb/tools/_dbpool.cpp.i
 
@@ -277,6 +309,7 @@ home/wucz/test/MyWeb/tools/_dbpool.s: home/wucz/test/MyWeb/tools/_dbpool.cpp.s
 
 # target to generate assembly for a file
 home/wucz/test/MyWeb/tools/_dbpool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/tools/_dbpool.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_login.dir/build.make CMakeFiles/t_login.dir/home/wucz/test/MyWeb/tools/_dbpool.cpp.s
 .PHONY : home/wucz/test/MyWeb/tools/_dbpool.cpp.s
 
@@ -285,7 +318,7 @@ home/wucz/test/MyWeb/tools/_directory.o: home/wucz/test/MyWeb/tools/_directory.c
 
 # target to build an object file
 home/wucz/test/MyWeb/tools/_directory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_get.dir/build.make CMakeFiles/t_get.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_showlist.dir/build.make CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_upload.dir/build.make CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_dir.dir/build.make CMakeFiles/t_dir.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o
@@ -296,7 +329,7 @@ home/wucz/test/MyWeb/tools/_directory.i: home/wucz/test/MyWeb/tools/_directory.c
 
 # target to preprocess a source file
 home/wucz/test/MyWeb/tools/_directory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_get.dir/build.make CMakeFiles/t_get.dir/home/wucz/test/MyWeb/tools/_directory.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/tools/_directory.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_showlist.dir/build.make CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/tools/_directory.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_upload.dir/build.make CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_directory.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_dir.dir/build.make CMakeFiles/t_dir.dir/home/wucz/test/MyWeb/tools/_directory.cpp.i
@@ -307,41 +340,18 @@ home/wucz/test/MyWeb/tools/_directory.s: home/wucz/test/MyWeb/tools/_directory.c
 
 # target to generate assembly for a file
 home/wucz/test/MyWeb/tools/_directory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_get.dir/build.make CMakeFiles/t_get.dir/home/wucz/test/MyWeb/tools/_directory.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/tools/_directory.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_showlist.dir/build.make CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/tools/_directory.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_upload.dir/build.make CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_directory.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_dir.dir/build.make CMakeFiles/t_dir.dir/home/wucz/test/MyWeb/tools/_directory.cpp.s
 .PHONY : home/wucz/test/MyWeb/tools/_directory.cpp.s
-
-home/wucz/test/MyWeb/tools/_json.o: home/wucz/test/MyWeb/tools/_json.cpp.o
-.PHONY : home/wucz/test/MyWeb/tools/_json.o
-
-# target to build an object file
-home/wucz/test/MyWeb/tools/_json.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_upload.dir/build.make CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.o
-.PHONY : home/wucz/test/MyWeb/tools/_json.cpp.o
-
-home/wucz/test/MyWeb/tools/_json.i: home/wucz/test/MyWeb/tools/_json.cpp.i
-.PHONY : home/wucz/test/MyWeb/tools/_json.i
-
-# target to preprocess a source file
-home/wucz/test/MyWeb/tools/_json.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_upload.dir/build.make CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.i
-.PHONY : home/wucz/test/MyWeb/tools/_json.cpp.i
-
-home/wucz/test/MyWeb/tools/_json.s: home/wucz/test/MyWeb/tools/_json.cpp.s
-.PHONY : home/wucz/test/MyWeb/tools/_json.s
-
-# target to generate assembly for a file
-home/wucz/test/MyWeb/tools/_json.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_upload.dir/build.make CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.s
-.PHONY : home/wucz/test/MyWeb/tools/_json.cpp.s
 
 home/wucz/test/MyWeb/tools/_log.o: home/wucz/test/MyWeb/tools/_log.cpp.o
 .PHONY : home/wucz/test/MyWeb/tools/_log.o
 
 # target to build an object file
 home/wucz/test/MyWeb/tools/_log.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/tools/_log.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_login.dir/build.make CMakeFiles/t_login.dir/home/wucz/test/MyWeb/tools/_log.cpp.o
 .PHONY : home/wucz/test/MyWeb/tools/_log.cpp.o
 
@@ -350,6 +360,7 @@ home/wucz/test/MyWeb/tools/_log.i: home/wucz/test/MyWeb/tools/_log.cpp.i
 
 # target to preprocess a source file
 home/wucz/test/MyWeb/tools/_log.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/tools/_log.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_login.dir/build.make CMakeFiles/t_login.dir/home/wucz/test/MyWeb/tools/_log.cpp.i
 .PHONY : home/wucz/test/MyWeb/tools/_log.cpp.i
 
@@ -358,6 +369,7 @@ home/wucz/test/MyWeb/tools/_log.s: home/wucz/test/MyWeb/tools/_log.cpp.s
 
 # target to generate assembly for a file
 home/wucz/test/MyWeb/tools/_log.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/tools/_log.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_login.dir/build.make CMakeFiles/t_login.dir/home/wucz/test/MyWeb/tools/_log.cpp.s
 .PHONY : home/wucz/test/MyWeb/tools/_log.cpp.s
 
@@ -366,6 +378,7 @@ home/wucz/test/MyWeb/tools/_mysql.o: home/wucz/test/MyWeb/tools/_mysql.cpp.o
 
 # target to build an object file
 home/wucz/test/MyWeb/tools/_mysql.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/tools/_mysql.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_login.dir/build.make CMakeFiles/t_login.dir/home/wucz/test/MyWeb/tools/_mysql.cpp.o
 .PHONY : home/wucz/test/MyWeb/tools/_mysql.cpp.o
 
@@ -374,6 +387,7 @@ home/wucz/test/MyWeb/tools/_mysql.i: home/wucz/test/MyWeb/tools/_mysql.cpp.i
 
 # target to preprocess a source file
 home/wucz/test/MyWeb/tools/_mysql.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/tools/_mysql.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_login.dir/build.make CMakeFiles/t_login.dir/home/wucz/test/MyWeb/tools/_mysql.cpp.i
 .PHONY : home/wucz/test/MyWeb/tools/_mysql.cpp.i
 
@@ -382,32 +396,9 @@ home/wucz/test/MyWeb/tools/_mysql.s: home/wucz/test/MyWeb/tools/_mysql.cpp.s
 
 # target to generate assembly for a file
 home/wucz/test/MyWeb/tools/_mysql.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/home/wucz/test/MyWeb/tools/_mysql.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_login.dir/build.make CMakeFiles/t_login.dir/home/wucz/test/MyWeb/tools/_mysql.cpp.s
 .PHONY : home/wucz/test/MyWeb/tools/_mysql.cpp.s
-
-home/wucz/test/MyWeb/tools/yyjson.o: home/wucz/test/MyWeb/tools/yyjson.cpp.o
-.PHONY : home/wucz/test/MyWeb/tools/yyjson.o
-
-# target to build an object file
-home/wucz/test/MyWeb/tools/yyjson.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_upload.dir/build.make CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.o
-.PHONY : home/wucz/test/MyWeb/tools/yyjson.cpp.o
-
-home/wucz/test/MyWeb/tools/yyjson.i: home/wucz/test/MyWeb/tools/yyjson.cpp.i
-.PHONY : home/wucz/test/MyWeb/tools/yyjson.i
-
-# target to preprocess a source file
-home/wucz/test/MyWeb/tools/yyjson.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_upload.dir/build.make CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.i
-.PHONY : home/wucz/test/MyWeb/tools/yyjson.cpp.i
-
-home/wucz/test/MyWeb/tools/yyjson.s: home/wucz/test/MyWeb/tools/yyjson.cpp.s
-.PHONY : home/wucz/test/MyWeb/tools/yyjson.s
-
-# target to generate assembly for a file
-home/wucz/test/MyWeb/tools/yyjson.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_upload.dir/build.make CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.s
-.PHONY : home/wucz/test/MyWeb/tools/yyjson.cpp.s
 
 t_dir.o: t_dir.cpp.o
 .PHONY : t_dir.o
@@ -433,30 +424,6 @@ t_dir.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_dir.dir/build.make CMakeFiles/t_dir.dir/t_dir.cpp.s
 .PHONY : t_dir.cpp.s
 
-t_get.o: t_get.cpp.o
-.PHONY : t_get.o
-
-# target to build an object file
-t_get.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_get.dir/build.make CMakeFiles/t_get.dir/t_get.cpp.o
-.PHONY : t_get.cpp.o
-
-t_get.i: t_get.cpp.i
-.PHONY : t_get.i
-
-# target to preprocess a source file
-t_get.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_get.dir/build.make CMakeFiles/t_get.dir/t_get.cpp.i
-.PHONY : t_get.cpp.i
-
-t_get.s: t_get.cpp.s
-.PHONY : t_get.s
-
-# target to generate assembly for a file
-t_get.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_get.dir/build.make CMakeFiles/t_get.dir/t_get.cpp.s
-.PHONY : t_get.cpp.s
-
 t_login.o: t_login.cpp.o
 .PHONY : t_login.o
 
@@ -480,6 +447,30 @@ t_login.s: t_login.cpp.s
 t_login.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_login.dir/build.make CMakeFiles/t_login.dir/t_login.cpp.s
 .PHONY : t_login.cpp.s
+
+t_post.o: t_post.cpp.o
+.PHONY : t_post.o
+
+# target to build an object file
+t_post.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/t_post.cpp.o
+.PHONY : t_post.cpp.o
+
+t_post.i: t_post.cpp.i
+.PHONY : t_post.i
+
+# target to preprocess a source file
+t_post.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/t_post.cpp.i
+.PHONY : t_post.cpp.i
+
+t_post.s: t_post.cpp.s
+.PHONY : t_post.s
+
+# target to generate assembly for a file
+t_post.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/t_post.cpp.s
+.PHONY : t_post.cpp.s
 
 t_showlist.o: t_showlist.cpp.o
 .PHONY : t_showlist.o
@@ -538,8 +529,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... t_dir"
-	@echo "... t_get"
 	@echo "... t_login"
+	@echo "... t_post"
 	@echo "... t_showlist"
 	@echo "... t_upload"
 	@echo "... home/wucz/test/MyWeb/src/login.o"
@@ -548,6 +539,9 @@ help:
 	@echo "... home/wucz/test/MyWeb/src/response.o"
 	@echo "... home/wucz/test/MyWeb/src/response.i"
 	@echo "... home/wucz/test/MyWeb/src/response.s"
+	@echo "... home/wucz/test/MyWeb/src/show.o"
+	@echo "... home/wucz/test/MyWeb/src/show.i"
+	@echo "... home/wucz/test/MyWeb/src/show.s"
 	@echo "... home/wucz/test/MyWeb/src/upload.o"
 	@echo "... home/wucz/test/MyWeb/src/upload.i"
 	@echo "... home/wucz/test/MyWeb/src/upload.s"
@@ -557,27 +551,21 @@ help:
 	@echo "... home/wucz/test/MyWeb/tools/_directory.o"
 	@echo "... home/wucz/test/MyWeb/tools/_directory.i"
 	@echo "... home/wucz/test/MyWeb/tools/_directory.s"
-	@echo "... home/wucz/test/MyWeb/tools/_json.o"
-	@echo "... home/wucz/test/MyWeb/tools/_json.i"
-	@echo "... home/wucz/test/MyWeb/tools/_json.s"
 	@echo "... home/wucz/test/MyWeb/tools/_log.o"
 	@echo "... home/wucz/test/MyWeb/tools/_log.i"
 	@echo "... home/wucz/test/MyWeb/tools/_log.s"
 	@echo "... home/wucz/test/MyWeb/tools/_mysql.o"
 	@echo "... home/wucz/test/MyWeb/tools/_mysql.i"
 	@echo "... home/wucz/test/MyWeb/tools/_mysql.s"
-	@echo "... home/wucz/test/MyWeb/tools/yyjson.o"
-	@echo "... home/wucz/test/MyWeb/tools/yyjson.i"
-	@echo "... home/wucz/test/MyWeb/tools/yyjson.s"
 	@echo "... t_dir.o"
 	@echo "... t_dir.i"
 	@echo "... t_dir.s"
-	@echo "... t_get.o"
-	@echo "... t_get.i"
-	@echo "... t_get.s"
 	@echo "... t_login.o"
 	@echo "... t_login.i"
 	@echo "... t_login.s"
+	@echo "... t_post.o"
+	@echo "... t_post.i"
+	@echo "... t_post.s"
 	@echo "... t_showlist.o"
 	@echo "... t_showlist.i"
 	@echo "... t_showlist.s"

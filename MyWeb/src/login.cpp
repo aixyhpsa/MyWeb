@@ -73,22 +73,26 @@ bool Login::operator()(const std::string &accountNumber, const std::string &pass
         if (conn != nullptr)
             break;
     }
-    sqlstatement stat(conn);
+    sqlstatement stmt(conn);
 
     // 准备查询语句
-    stat.prepare(m_SQL.c_str(), accountNumber.c_str(), password.c_str());
-    LOG_DEBUG(m_SQL.c_str(), accountNumber.c_str(), password.c_str());
+    //stat.prepare(m_SQL.c_str(), accountNumber.c_str(), password.c_str()); // 有SQL注入的漏洞
+    stmt.prepare(m_SQL.c_str());
+    LOG_DEBUG("%s\n", stmt.m_sql);
+    // 绑定输入参数
+    stmt.bindin(1, (char*)accountNumber.c_str(), accountNumber.size());
+    stmt.bindin(2, (char*)password.c_str(), password.size());
     // 绑定结果集
     int ret = 0;
-    stat.bindout(1, &ret);
+    stmt.bindout(1, &ret);
     // 执行查询语句
-    if (stat.execute() != 0)
+    if (stmt.execute() != 0)
     {
         // 查询失败写一行日志
-        LOG_DEBUG("SQL execute error! message:%s\n", stat.m_cda.message);
+        LOG_DEBUG("SQL execute error! message:%s\n", stmt.m_cda.message);
     }
     // 取出结果并比较
-    stat.next();
+    stmt.next();
     if (ret == 1) 
         return true;
 

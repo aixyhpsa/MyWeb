@@ -5,7 +5,8 @@
 namespace dya
 {
 ////////////////////////////////////////////////////////////////////
-const char kRootPath[] = "/home/wucz/test/MyWeb/resource";
+const std::string kRootPath{"/home/wucz/test/MyWeb/resource"};
+const std::string kUploadPath{"/home/wucz/test/MyWeb/resource/upload"};
 ////////////////////////////////////////////////////////////////////
 class Get 
 {
@@ -23,12 +24,17 @@ private :
 class Post
 {
 public :
+
+    /**
+     * @brief 处理POST请求
+     * @param HTTP请求的请求体
+     */
     Post(const std::string &buff);
 
     std::string getResponse();
 private :
-    std::string upload();
     std::string error();
+    std::string success(const std::string &srsponseBody);
 private :
     const std::string &m_buff;
 };

@@ -111,41 +111,11 @@ CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_directory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_directory.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wucz/test/MyWeb/tools/_directory.cpp -o CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_directory.cpp.s
 
-CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.o: CMakeFiles/t_upload.dir/flags.make
-CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.o: /home/wucz/test/MyWeb/tools/_json.cpp
-CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.o: CMakeFiles/t_upload.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wucz/test/MyWeb/test/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.o -MF CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.o.d -o CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.o -c /home/wucz/test/MyWeb/tools/_json.cpp
-
-CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wucz/test/MyWeb/tools/_json.cpp > CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.i
-
-CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wucz/test/MyWeb/tools/_json.cpp -o CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.s
-
-CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.o: CMakeFiles/t_upload.dir/flags.make
-CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.o: /home/wucz/test/MyWeb/tools/yyjson.cpp
-CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.o: CMakeFiles/t_upload.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wucz/test/MyWeb/test/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.o -MF CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.o.d -o CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.o -c /home/wucz/test/MyWeb/tools/yyjson.cpp
-
-CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wucz/test/MyWeb/tools/yyjson.cpp > CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.i
-
-CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wucz/test/MyWeb/tools/yyjson.cpp -o CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.s
-
 # Object files for target t_upload
 t_upload_OBJECTS = \
 "CMakeFiles/t_upload.dir/t_upload.cpp.o" \
 "CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/src/upload.cpp.o" \
-"CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o" \
-"CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.o" \
-"CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.o"
+"CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o"
 
 # External object files for target t_upload
 t_upload_EXTERNAL_OBJECTS =
@@ -153,11 +123,9 @@ t_upload_EXTERNAL_OBJECTS =
 t_upload: CMakeFiles/t_upload.dir/t_upload.cpp.o
 t_upload: CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/src/upload.cpp.o
 t_upload: CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o
-t_upload: CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.o
-t_upload: CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.o
 t_upload: CMakeFiles/t_upload.dir/build.make
 t_upload: CMakeFiles/t_upload.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wucz/test/MyWeb/test/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable t_upload"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wucz/test/MyWeb/test/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable t_upload"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/t_upload.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

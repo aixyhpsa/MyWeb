@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/upload.cpp.o"
-  "CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/upload.cpp.o.d"
+  "CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/show.cpp.o"
+  "CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/src/show.cpp.o.d"
   "CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o"
   "CMakeFiles/t_showlist.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o.d"
   "CMakeFiles/t_showlist.dir/t_showlist.cpp.o"

@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/wucz/test/MyWeb/test/Build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/t_get.dir/all
+all: CMakeFiles/t_post.dir/all
 all: CMakeFiles/t_showlist.dir/all
 all: CMakeFiles/t_upload.dir/all
 all: CMakeFiles/t_dir.dir/all
@@ -75,7 +75,7 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/t_get.dir/clean
+clean: CMakeFiles/t_post.dir/clean
 clean: CMakeFiles/t_showlist.dir/clean
 clean: CMakeFiles/t_upload.dir/clean
 clean: CMakeFiles/t_dir.dir/clean
@@ -83,30 +83,30 @@ clean: CMakeFiles/t_login.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/t_get.dir
+# Target rules for target CMakeFiles/t_post.dir
 
 # All Build rule for target.
-CMakeFiles/t_get.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_get.dir/build.make CMakeFiles/t_get.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_get.dir/build.make CMakeFiles/t_get.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wucz/test/MyWeb/test/Build/CMakeFiles --progress-num=4,5,6,7 "Built target t_get"
-.PHONY : CMakeFiles/t_get.dir/all
+CMakeFiles/t_post.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wucz/test/MyWeb/test/Build/CMakeFiles --progress-num=10,11,12,13,14,15,16,17,18,19 "Built target t_post"
+.PHONY : CMakeFiles/t_post.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/t_get.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wucz/test/MyWeb/test/Build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/t_get.dir/all
+CMakeFiles/t_post.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wucz/test/MyWeb/test/Build/CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/t_post.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wucz/test/MyWeb/test/Build/CMakeFiles 0
-.PHONY : CMakeFiles/t_get.dir/rule
+.PHONY : CMakeFiles/t_post.dir/rule
 
 # Convenience name for target.
-t_get: CMakeFiles/t_get.dir/rule
-.PHONY : t_get
+t_post: CMakeFiles/t_post.dir/rule
+.PHONY : t_post
 
 # clean rule for target.
-CMakeFiles/t_get.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_get.dir/build.make CMakeFiles/t_get.dir/clean
-.PHONY : CMakeFiles/t_get.dir/clean
+CMakeFiles/t_post.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_post.dir/build.make CMakeFiles/t_post.dir/clean
+.PHONY : CMakeFiles/t_post.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/t_showlist.dir
@@ -115,7 +115,7 @@ CMakeFiles/t_get.dir/clean:
 CMakeFiles/t_showlist.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_showlist.dir/build.make CMakeFiles/t_showlist.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_showlist.dir/build.make CMakeFiles/t_showlist.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wucz/test/MyWeb/test/Build/CMakeFiles --progress-num=14,15,16,17 "Built target t_showlist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wucz/test/MyWeb/test/Build/CMakeFiles --progress-num=20,21,22,23 "Built target t_showlist"
 .PHONY : CMakeFiles/t_showlist.dir/all
 
 # Build rule for subdir invocation for target.
@@ -141,12 +141,12 @@ CMakeFiles/t_showlist.dir/clean:
 CMakeFiles/t_upload.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_upload.dir/build.make CMakeFiles/t_upload.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_upload.dir/build.make CMakeFiles/t_upload.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wucz/test/MyWeb/test/Build/CMakeFiles --progress-num=18,19,20,21,22,23 "Built target t_upload"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wucz/test/MyWeb/test/Build/CMakeFiles --progress-num=24,25,26,27 "Built target t_upload"
 .PHONY : CMakeFiles/t_upload.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/t_upload.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wucz/test/MyWeb/test/Build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wucz/test/MyWeb/test/Build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/t_upload.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wucz/test/MyWeb/test/Build/CMakeFiles 0
 .PHONY : CMakeFiles/t_upload.dir/rule
@@ -193,7 +193,7 @@ CMakeFiles/t_dir.dir/clean:
 CMakeFiles/t_login.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_login.dir/build.make CMakeFiles/t_login.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_login.dir/build.make CMakeFiles/t_login.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wucz/test/MyWeb/test/Build/CMakeFiles --progress-num=8,9,10,11,12,13 "Built target t_login"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wucz/test/MyWeb/test/Build/CMakeFiles --progress-num=4,5,6,7,8,9 "Built target t_login"
 .PHONY : CMakeFiles/t_login.dir/all
 
 # Build rule for subdir invocation for target.

@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic CMakeFiles/t_upload.dir/t_upload.cpp.o CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/src/upload.cpp.o CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_json.cpp.o CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/yyjson.cpp.o -o t_upload 
+/usr/bin/c++ -rdynamic CMakeFiles/t_upload.dir/t_upload.cpp.o CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/src/upload.cpp.o CMakeFiles/t_upload.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o -o t_upload 

@@ -21,13 +21,20 @@ add_executable(t_dir t_dir.cpp ${tools}/_directory.cpp)
 target_include_directories(t_dir PUBLIC ${tools} ${src})
 
 # t_upload
-add_executable(t_upload t_upload.cpp ${src}/upload.cpp ${tools}/_directory.cpp ${tools}/_json.cpp ${tools}/yyjson.cpp)
+add_executable(t_upload t_upload.cpp ${src}/upload.cpp ${tools}/_directory.cpp)
 target_include_directories(t_upload PUBLIC ${tools} ${src})
 
 # t_showlist
-add_executable(t_showlist t_showlist.cpp ${src}/upload.cpp ${tools}/_directory.cpp)
+add_executable(t_showlist t_showlist.cpp ${src}/show.cpp ${tools}/_directory.cpp)
 target_include_directories(t_showlist PUBLIC ${tools} ${src} ${json_include})
 
 # t_get
-add_executable(t_get t_get.cpp ${src}/response.cpp ${tools}/_directory.cpp)
-target_include_directories(t_get PUBLIC ${tools} ${src})
+#add_executable(t_get t_get.cpp ${src}/response.cpp ${tools}/_directory.cpp ${src}/login.cpp ${src}/show.cpp ${src}/upload.cpp)
+#target_include_directories(t_get PUBLIC ${tools} ${src})
+
+# t_post
+add_executable(t_post t_post.cpp ${src}/response.cpp ${tools}/_directory.cpp  ${src}/show.cpp ${src}/upload.cpp
+            ${src}/login.cpp ${tools}/_dbpool.cpp ${tools}/_log.cpp ${tools}/_mysql.cpp)
+target_include_directories(t_post PUBLIC ${tools} ${src} ${mysql_include})
+target_link_directories(t_post PUBLIC ${mysql_lib})
+target_link_libraries(t_post pthread mysqlclient)

@@ -131,7 +131,7 @@ CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/response.cpp.o: \
  /usr/include/c++/10/bits/invoke.h /usr/include/c++/10/limits \
  /usr/include/c++/10/bits/unordered_map.h \
  /usr/include/c++/10/bits/erase_if.h \
- /home/wucz/test/MyWeb/test/../tools/_directory.h /usr/include/sys/stat.h \
+ /home/wucz/test/MyWeb/src/../tools/_directory.h /usr/include/sys/stat.h \
  /usr/include/bits/stat.h /usr/include/bits/statx.h \
  /usr/include/linux/stat.h /usr/include/linux/types.h \
  /usr/include/asm/types.h /usr/include/asm-generic/types.h \
@@ -245,4 +245,4 @@ CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/response.cpp.o: \
  /home/wucz/test/MyWeb/test/../tools/nlohmann/ordered_map.hpp \
  /home/wucz/test/MyWeb/test/../tools/nlohmann/detail/macro_unscope.hpp \
  /home/wucz/test/MyWeb/test/../tools/nlohmann/thirdparty/hedley/hedley_undef.hpp \
- /home/wucz/test/MyWeb/src/login.h
+ /home/wucz/test/MyWeb/src/login.h /home/wucz/test/MyWeb/src/upload.h

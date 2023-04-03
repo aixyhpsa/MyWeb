@@ -1,80 +1,66 @@
-#include <cassert>
-#include <sstream>
-#include <vector>
 #include "upload.h"
-#include "_time.h"
-#include "nlohmann/json.hpp"
+#include <fstream>
+#include "../tools/_directory.h"
 
 namespace dya
 {
 ////////////////////////////////////////////////////////////////////
-Upload::Upload(const std::string &path) : m_path(path)
+bool Upload::operator()(const std::string &uploadPath, const std::string &body)
 {
-    File f(path.c_str());
-    assert(f.isExist());
+    // 从body中找到文件名称
+    int beg = body.find("filename=");
+    if (beg == -1)
+        return false;
+    beg = beg + sizeof("filename=");
+    int end = body.find(R"(")", beg);
+    std::string fileName = uploadPath;
+    // 判断本地存放目录(uploadPath)不是 '/' 结尾
+    if (fileName[fileName.size()-1] != '/')
+        fileName.append("/");
+    int pathCount = fileName.size();
+    fileName.append(body.substr(beg, end-beg));
 
-    if (m_path[m_path.size()-1] != '/')
-        m_path.append("/");
-}
-
-int Upload::write(const char *fileName, const char *content)
-{
-    m_fout.open((m_path+fileName), std::ios::binary);
-    m_fout << content;
-    m_fout.close();
-    return 0;
-}
-////////////////////////////////////////////////////////////////////
-// 使用nlohmann的版本
-ShowList::ShowList(const char *path) : m_dir(path) {}
-
-std::string ShowList::show()
-{
-    m_dir.readdir();
-    std::stringstream ss;
-    nlohmann::json nj;
-    for (int i=0; i<m_dir.count(); ++i)
+    // 检查这个文件是否已经存在
+    if (File::isExist(fileName.c_str()) == true)
     {
-        std::string date = Time::to_string(m_dir[i].mtime(), "%Y-%m-%d %H:%M:%S");
-        char type[5]{0};
-        if (m_dir[i].isDir())
-            strcpy(type, "dir");
+        // 对付名称重复的策略：在名字的后面后缀名的前面加(1)
+        int suffix = fileName.find_last_of(".", fileName.size()-1, fileName.size()-1-pathCount);
+        if (suffix == -1)
+            fileName.append("(1)");
         else
-            strcpy(type, "file");
-
-        nj[m_dir[i].name()] = {{"size", m_dir[i].size()}, 
-                               {"date", date.c_str()}, 
-                               {"typ", type}};
+            fileName.insert(suffix, "(1)");
     }
-    ss << nj;
-    return ss.str();
-}
-////////////////////////////////////////////////////////////////////
-/*使用yyjson的版本
-ShowList::ShowList(const char *path) : m_dir(path) {}
-
-Json::JSON ShowList::getList()
-{
-    m_dir.readdir();
-    std::vector<Json::JSON> vs;
-    for (int i=0; i<m_dir.count(); i++)
+    // 如果(1)还是重复，那么括号中间数字加一，以此类推，直到不再重复为止
+    int count = 2;
+    while (File::isExist(fileName.c_str()))
     {
-        Json::Write json;
-        json.add("name", m_dir[i].name());
-        json.add("size", m_dir[i].size());
-        std::string date = Time::to_string(m_dir[i].mtime(), "%Y-%m-%d %H:%M:%S");
-        json.add("date", date.c_str());
-        if (m_dir[i].isDir())
-            json.add("type", "dir");
-        else
-            json.add("type", "file");
-        vs.emplace_back(json.get());
-
+        int right = fileName.find_last_of(")", fileName.size()-1, fileName.size()-1-pathCount);
+        int left = fileName.find_last_of("(", fileName.size()-1, fileName.size()-1-pathCount);
+        fileName.replace(left+1, right-left-1, std::to_string(count));
+        ++count;
     }
-    Json::Write json;
-    json.add("result", vs);
-    return json.get();
+
+    std::ofstream fout;
+    fout.open(fileName, std::ios::app);
+    if (fout.is_open() == false)
+        return false;
+
+    beg = body.find("\r\n", end);
+    if (beg == -1)
+    {
+        fout.close();
+        return false; 
+    }
+    beg += sizeof("\r\n");
+    end = body.find("------WebKitFormBoundary", end);
+    if (end == -1)
+    {
+        fout.close();
+        return false;
+    }
+    fout << body.substr(beg, end-beg);
+    fout.close();
+    return true;
 }
-*/
 ////////////////////////////////////////////////////////////////////
 }

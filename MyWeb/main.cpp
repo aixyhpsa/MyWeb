@@ -5,7 +5,8 @@
 
 #include "src/upload.h"
 #include "src/login.h"
-#include "src/get.h"
+#include "src/show.h"
+#include "src/response.h"
 
 #include <string>
 

@@ -111,11 +111,56 @@ CMakeFiles/t_get.dir/home/wucz/test/MyWeb/tools/_directory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/t_get.dir/home/wucz/test/MyWeb/tools/_directory.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wucz/test/MyWeb/tools/_directory.cpp -o CMakeFiles/t_get.dir/home/wucz/test/MyWeb/tools/_directory.cpp.s
 
+CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/login.cpp.o: CMakeFiles/t_get.dir/flags.make
+CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/login.cpp.o: /home/wucz/test/MyWeb/src/login.cpp
+CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/login.cpp.o: CMakeFiles/t_get.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wucz/test/MyWeb/test/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/login.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/login.cpp.o -MF CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/login.cpp.o.d -o CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/login.cpp.o -c /home/wucz/test/MyWeb/src/login.cpp
+
+CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/login.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/login.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wucz/test/MyWeb/src/login.cpp > CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/login.cpp.i
+
+CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/login.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/login.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wucz/test/MyWeb/src/login.cpp -o CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/login.cpp.s
+
+CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/show.cpp.o: CMakeFiles/t_get.dir/flags.make
+CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/show.cpp.o: /home/wucz/test/MyWeb/src/show.cpp
+CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/show.cpp.o: CMakeFiles/t_get.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wucz/test/MyWeb/test/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/show.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/show.cpp.o -MF CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/show.cpp.o.d -o CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/show.cpp.o -c /home/wucz/test/MyWeb/src/show.cpp
+
+CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/show.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/show.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wucz/test/MyWeb/src/show.cpp > CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/show.cpp.i
+
+CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/show.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/show.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wucz/test/MyWeb/src/show.cpp -o CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/show.cpp.s
+
+CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/upload.cpp.o: CMakeFiles/t_get.dir/flags.make
+CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/upload.cpp.o: /home/wucz/test/MyWeb/src/upload.cpp
+CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/upload.cpp.o: CMakeFiles/t_get.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wucz/test/MyWeb/test/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/upload.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/upload.cpp.o -MF CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/upload.cpp.o.d -o CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/upload.cpp.o -c /home/wucz/test/MyWeb/src/upload.cpp
+
+CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/upload.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/upload.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wucz/test/MyWeb/src/upload.cpp > CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/upload.cpp.i
+
+CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/upload.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/upload.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wucz/test/MyWeb/src/upload.cpp -o CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/upload.cpp.s
+
 # Object files for target t_get
 t_get_OBJECTS = \
 "CMakeFiles/t_get.dir/t_get.cpp.o" \
 "CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/response.cpp.o" \
-"CMakeFiles/t_get.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o"
+"CMakeFiles/t_get.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o" \
+"CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/login.cpp.o" \
+"CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/show.cpp.o" \
+"CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/upload.cpp.o"
 
 # External object files for target t_get
 t_get_EXTERNAL_OBJECTS =
@@ -123,9 +168,12 @@ t_get_EXTERNAL_OBJECTS =
 t_get: CMakeFiles/t_get.dir/t_get.cpp.o
 t_get: CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/response.cpp.o
 t_get: CMakeFiles/t_get.dir/home/wucz/test/MyWeb/tools/_directory.cpp.o
+t_get: CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/login.cpp.o
+t_get: CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/show.cpp.o
+t_get: CMakeFiles/t_get.dir/home/wucz/test/MyWeb/src/upload.cpp.o
 t_get: CMakeFiles/t_get.dir/build.make
 t_get: CMakeFiles/t_get.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wucz/test/MyWeb/test/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable t_get"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wucz/test/MyWeb/test/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable t_get"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/t_get.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
