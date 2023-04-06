@@ -90,6 +90,9 @@ bool Login::operator()(const std::string &accountNumber, const std::string &pass
     {
         // 查询失败写一行日志
         LOG_DEBUG("SQL execute error! message:%s\n", stmt.m_cda.message);
+        // 归还数据库连接
+        dbpoolPtr->freeConnect(conn);
+        return {};
     }
     // 取出结果并比较
     stmt.next();

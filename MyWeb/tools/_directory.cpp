@@ -89,9 +89,9 @@ bool File::stat()
     return true;
 }
 
-const char* File::name()
+const std::string& File::name()
 {
-    return m_name.c_str();
+    return m_name;
 }
 ////////////////////////////////////////////////////////////////////
 Dir::~Dir()

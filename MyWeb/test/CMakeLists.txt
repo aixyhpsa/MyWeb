@@ -38,3 +38,9 @@ add_executable(t_post t_post.cpp ${src}/response.cpp ${tools}/_directory.cpp  ${
 target_include_directories(t_post PUBLIC ${tools} ${src} ${mysql_include})
 target_link_directories(t_post PUBLIC ${mysql_lib})
 target_link_libraries(t_post pthread mysqlclient)
+
+# t_login
+add_executable(t_message t_message.cpp ${src}/message.cpp ${tools}/_dbpool.cpp ${tools}/_log.cpp ${tools}/_mysql.cpp)
+target_include_directories(t_message PUBLIC ${tools} ${src} ${mysql_include})
+target_link_directories(t_message PUBLIC ${mysql_lib})
+target_link_libraries(t_message pthread mysqlclient)

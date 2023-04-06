@@ -223,24 +223,38 @@ CMakeFiles/main.dir/tools/http_parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/tools/http_parser.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wucz/test/MyWeb/tools/http_parser.cpp -o CMakeFiles/main.dir/tools/http_parser.cpp.s
 
-CMakeFiles/main.dir/src/get.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/get.cpp.o: ../src/get.cpp
-CMakeFiles/main.dir/src/get.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wucz/test/MyWeb/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/main.dir/src/get.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/get.cpp.o -MF CMakeFiles/main.dir/src/get.cpp.o.d -o CMakeFiles/main.dir/src/get.cpp.o -c /home/wucz/test/MyWeb/src/get.cpp
+CMakeFiles/main.dir/tools/_time.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/tools/_time.cpp.o: ../tools/_time.cpp
+CMakeFiles/main.dir/tools/_time.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wucz/test/MyWeb/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/main.dir/tools/_time.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/tools/_time.cpp.o -MF CMakeFiles/main.dir/tools/_time.cpp.o.d -o CMakeFiles/main.dir/tools/_time.cpp.o -c /home/wucz/test/MyWeb/tools/_time.cpp
 
-CMakeFiles/main.dir/src/get.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/get.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wucz/test/MyWeb/src/get.cpp > CMakeFiles/main.dir/src/get.cpp.i
+CMakeFiles/main.dir/tools/_time.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/tools/_time.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wucz/test/MyWeb/tools/_time.cpp > CMakeFiles/main.dir/tools/_time.cpp.i
 
-CMakeFiles/main.dir/src/get.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/get.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wucz/test/MyWeb/src/get.cpp -o CMakeFiles/main.dir/src/get.cpp.s
+CMakeFiles/main.dir/tools/_time.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/tools/_time.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wucz/test/MyWeb/tools/_time.cpp -o CMakeFiles/main.dir/tools/_time.cpp.s
+
+CMakeFiles/main.dir/src/response.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/response.cpp.o: ../src/response.cpp
+CMakeFiles/main.dir/src/response.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wucz/test/MyWeb/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/main.dir/src/response.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/response.cpp.o -MF CMakeFiles/main.dir/src/response.cpp.o.d -o CMakeFiles/main.dir/src/response.cpp.o -c /home/wucz/test/MyWeb/src/response.cpp
+
+CMakeFiles/main.dir/src/response.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/response.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wucz/test/MyWeb/src/response.cpp > CMakeFiles/main.dir/src/response.cpp.i
+
+CMakeFiles/main.dir/src/response.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/response.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wucz/test/MyWeb/src/response.cpp -o CMakeFiles/main.dir/src/response.cpp.s
 
 CMakeFiles/main.dir/src/login.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/login.cpp.o: ../src/login.cpp
 CMakeFiles/main.dir/src/login.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wucz/test/MyWeb/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/main.dir/src/login.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wucz/test/MyWeb/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/main.dir/src/login.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/login.cpp.o -MF CMakeFiles/main.dir/src/login.cpp.o.d -o CMakeFiles/main.dir/src/login.cpp.o -c /home/wucz/test/MyWeb/src/login.cpp
 
 CMakeFiles/main.dir/src/login.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/main.dir/src/login.cpp.s: cmake_force
 CMakeFiles/main.dir/src/upload.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/upload.cpp.o: ../src/upload.cpp
 CMakeFiles/main.dir/src/upload.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wucz/test/MyWeb/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/main.dir/src/upload.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wucz/test/MyWeb/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/main.dir/src/upload.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/upload.cpp.o -MF CMakeFiles/main.dir/src/upload.cpp.o.d -o CMakeFiles/main.dir/src/upload.cpp.o -c /home/wucz/test/MyWeb/src/upload.cpp
 
 CMakeFiles/main.dir/src/upload.cpp.i: cmake_force
@@ -264,6 +278,34 @@ CMakeFiles/main.dir/src/upload.cpp.i: cmake_force
 CMakeFiles/main.dir/src/upload.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/upload.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wucz/test/MyWeb/src/upload.cpp -o CMakeFiles/main.dir/src/upload.cpp.s
+
+CMakeFiles/main.dir/src/show.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/show.cpp.o: ../src/show.cpp
+CMakeFiles/main.dir/src/show.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wucz/test/MyWeb/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/main.dir/src/show.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/show.cpp.o -MF CMakeFiles/main.dir/src/show.cpp.o.d -o CMakeFiles/main.dir/src/show.cpp.o -c /home/wucz/test/MyWeb/src/show.cpp
+
+CMakeFiles/main.dir/src/show.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/show.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wucz/test/MyWeb/src/show.cpp > CMakeFiles/main.dir/src/show.cpp.i
+
+CMakeFiles/main.dir/src/show.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/show.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wucz/test/MyWeb/src/show.cpp -o CMakeFiles/main.dir/src/show.cpp.s
+
+CMakeFiles/main.dir/src/message.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/message.cpp.o: ../src/message.cpp
+CMakeFiles/main.dir/src/message.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wucz/test/MyWeb/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/main.dir/src/message.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/message.cpp.o -MF CMakeFiles/main.dir/src/message.cpp.o.d -o CMakeFiles/main.dir/src/message.cpp.o -c /home/wucz/test/MyWeb/src/message.cpp
+
+CMakeFiles/main.dir/src/message.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/message.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wucz/test/MyWeb/src/message.cpp > CMakeFiles/main.dir/src/message.cpp.i
+
+CMakeFiles/main.dir/src/message.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/message.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wucz/test/MyWeb/src/message.cpp -o CMakeFiles/main.dir/src/message.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
@@ -278,9 +320,12 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/tools/_dbpool.cpp.o" \
 "CMakeFiles/main.dir/tools/_http.cpp.o" \
 "CMakeFiles/main.dir/tools/http_parser.cpp.o" \
-"CMakeFiles/main.dir/src/get.cpp.o" \
+"CMakeFiles/main.dir/tools/_time.cpp.o" \
+"CMakeFiles/main.dir/src/response.cpp.o" \
 "CMakeFiles/main.dir/src/login.cpp.o" \
-"CMakeFiles/main.dir/src/upload.cpp.o"
+"CMakeFiles/main.dir/src/upload.cpp.o" \
+"CMakeFiles/main.dir/src/show.cpp.o" \
+"CMakeFiles/main.dir/src/message.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
@@ -296,12 +341,15 @@ main: CMakeFiles/main.dir/tools/_mysql.cpp.o
 main: CMakeFiles/main.dir/tools/_dbpool.cpp.o
 main: CMakeFiles/main.dir/tools/_http.cpp.o
 main: CMakeFiles/main.dir/tools/http_parser.cpp.o
-main: CMakeFiles/main.dir/src/get.cpp.o
+main: CMakeFiles/main.dir/tools/_time.cpp.o
+main: CMakeFiles/main.dir/src/response.cpp.o
 main: CMakeFiles/main.dir/src/login.cpp.o
 main: CMakeFiles/main.dir/src/upload.cpp.o
+main: CMakeFiles/main.dir/src/show.cpp.o
+main: CMakeFiles/main.dir/src/message.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wucz/test/MyWeb/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wucz/test/MyWeb/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

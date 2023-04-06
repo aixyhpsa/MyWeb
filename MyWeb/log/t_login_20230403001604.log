@@ -1,1 +1,0 @@
-2023-04-03 00:16:04 DEBUG /home/wucz/test/MyWeb/src/login.cpp 81 select count(password) from user where accountNumber=:1 and password=:2

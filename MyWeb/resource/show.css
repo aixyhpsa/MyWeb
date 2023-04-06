@@ -1,0 +1,72 @@
+/**********************上传和下载**********************/
+table {
+    border:none;
+}
+tr{
+    /*border:none;*/
+    color: #000;
+    /*transition: all .3s;*/
+}
+th{
+    padding: 10px;
+    border-top: none;
+    border-bottom: none;
+}
+td{
+    /*鼠标变手性*/
+    cursor: pointer;
+    padding: 10px;
+    border:none;
+}
+#content{
+    position: absolute;
+    left: 10%;
+    height: 500px;
+    width: 90%;
+    /*滚轮效果*/
+    overflow: auto;
+}
+/******第二页 最上面两个******/
+.select{
+    position: absolute;
+    top: 6%;
+    left: 38%;
+
+    border-radius: 16px;
+    background-color: transparent;
+
+    backdrop-filter: blur(3px);
+    border-left: 2px solid rgba(255, 255, 255, .3);
+    border-top: 2px solid rgba(255, 255, 255, .3);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+  
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    font-family: "Berlin Sans FB";
+    /*鼠标变手性*/
+    cursor: pointer;
+    /*
+    border:1px solid #ddd;
+    background-color: #59c2c5;
+    color: #fff;
+    */
+}
+
+.upload{
+    position: absolute;
+    top: 6%;
+    right: 38%;
+/*
+    background-color: #59c2c5;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    */
+  border: none;
+  background-color: rgba(255, 255, 255, .1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+  border-right: 2px solid rgba(255, 255, 255, .3);
+  border-bottom: 2px solid rgba(255, 255, 255, .3);
+  box-shadow:inset 2px 2px 2px rgba(0, 0, 0, .2);
+    /*鼠标变手性*/
+    cursor: pointer;
+}

@@ -68,8 +68,9 @@ void ShowFileList::addJsonField(nlohmann::json &nj, File &f)
         strcpy(type, "dir");
     else
         strcpy(type, "file");
-
-    nj[f.name()] = {{"size", f.size()}, {"date", date.c_str()}, {"typ", type}};   
+    // 去除绝对路径，只保留文件名
+    int pos = f.name().find_last_of('/');
+    nj[f.name().substr(pos+1)] = {{"size", f.size()}, {"date", date.c_str()}, {"type", type}};   
 }
 ////////////////////////////////////////////////////////////////////
 }

@@ -21,12 +21,13 @@ std::string t_login_true{R"({"accountNumber":"root", "password":"368751429QQ"})"
 std::string t_login_false{R"({"accountNumber":"root", "password":"12312"})"};
 
 std::string t_showFileList_root{R"({"showList":"rootPath"})"};
-std::string t_showFileList_subdir{R"({"showList":"/home/wucz/test/MyWeb/resource/upload"})"};
+// 本地存放路径程序会自己加上
+std::string t_showFileList_subdir{R"({"showList":"33.html"})"};
 
 using DatebasePool = dya::Singleton<dya::DatebasePool>;
 int main()
 {
-    LOG_INIT("/home/wucz/test/MyWeb/log", true);
+    LOG_INIT("/home/wucz/test/MyWeb/log/t_post", true);
     DatebasePool::instance("8.130.105.64,root,bilibili2022,test0715,3306", "utf8", 20, 10);
 
     dya::Post p1(t_upload);

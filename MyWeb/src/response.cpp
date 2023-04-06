@@ -1,10 +1,14 @@
 #include "response.h"
 #include <unordered_map>
+
 #include "../tools/_directory.h"
-#include "nlohmann/json.hpp"
+#include "../tools/_log.h"
+#include "../tools/nlohmann/json.hpp"
+
 #include "login.h"
 #include "upload.h"
 #include "show.h"
+#include "message.h"
 
 namespace dya
 {
@@ -41,26 +45,32 @@ Get::Get(std::string &&name) : m_name(std::move(name)) {}
 
 std::string Get::getResponse()
 {
+    // 第一次访问
+    if (m_name == "/")
+        m_name.append("index.html");
+
+    // 检查路径
     if (kRootPath[kRootPath.size()-1] != '/' && m_name[0] != '/')
         m_name = kRootPath + "/" + m_name;
     else
         m_name = kRootPath + m_name;
-
+    
     std::string ret;
     File f(m_name);
     m_fin.open(m_name, std::ios::binary);
 
+    // 文件不存在或者打开失败
     if (f.isExist() == false || m_fin.is_open() == false)
     {
         ret.append(kHead_404);
         ret.append(kAccess);
         ret.append(kContent_Length);
-        ret.append("61\r\n");
+        ret.append("9\r\n");
         ret.append(kContent_Type);
-        ret.append("text/html");
+        ret.append("text/plain");
         ret.append(kContent_Type_charset);
         ret.append("\r\n");
-        ret.append("<html><head>404</head><body><h1>Not Found</h1></body></html>");
+        ret.append("Not Found");
         return ret;
     }
 
@@ -78,19 +88,23 @@ std::string Get::getResponse()
     ret.append("\r\n");
 
     int beg = ret.size();
-    ret.resize(f.size()+beg);
-    m_fin.read(&ret[beg], f.size());
+    ret.resize((f.size()+beg));
+    // 从文件中读取结果
+    int count = m_fin.readsome(&ret[beg], f.size());
     return ret;
 }
 
 std::string Get::getFileType()
 {
+    // 没有后缀名的统统当成普通文本文件处理
     int beg = m_name.find_last_of('.');
     if (beg == -1)
         return kFileType["plain"];
 
     std::string type = m_name.substr(beg+1);
-    if (kFileType[type] == "")
+    // 有后缀名但是这个后缀名是自定义的，也统统当成文本文件处理
+    //if (kFileType[type] == "")
+    if (kFileType.find(type) == kFileType.end())
         return kFileType["plain"];
     return kFileType[type];
 }
@@ -119,19 +133,14 @@ std::string Post::getResponse()
         return this->error();
     }
 
-    // 添加留言：{"messageBoard":"XXX"}
-    if (jRet.find("messageBoard") != jRet.end())
-    {
-        return {};
-    }
-
     // 展示文件夹
-    // {"showList":"root"}
+    // {"showList":"rootPat"}
     if (jRet.find("showList") != jRet.end())
     {
         if (jRet["showList"] == "rootPath")
             return this->success(ShowFileList()(kUploadPath));
         std::string name;
+        // 添加本地存放的途径
         name.append(kUploadPath);
         if (name[name.size()-1] != '/')
             name.append("/");
@@ -139,8 +148,24 @@ std::string Post::getResponse()
         return this->success(ShowFileList()(name));
     }
 
+    // 添加留言：{"message":"XXX"}
+    if (jRet.find("message_add") != jRet.end())
+    {
+        MessageBoard mb;
+        auto ret =  mb.write(jRet["message_add"]);
+        if (ret.size() == 0)
+            return this->error();
+        return this->success(ret);
+    }
     // 展示留言
-
+    if (jRet.find("message_show") != jRet.end())
+    {
+        MessageBoard mb;
+        auto ret =  mb.read();
+        if (ret.size() == 0)
+            return this->error();
+        return this->success(ret);
+    }
     // error修改
     return this->error();
 }
@@ -168,12 +193,12 @@ std::string Post::error()
     ret.append(kHead_503);
     ret.append(kAccess);
     ret.append(kContent_Length);
-    ret.append("71\r\n");
+    ret.append("5\r\n");
     ret.append(kContent_Type);
-    ret.append("text/html");
+    ret.append("text/plain");
     ret.append(kContent_Type_charset);
     ret.append("\r\n");
-    ret.append("<html><head>503</head><body><h1>Service Unavailable</h1></body></html>");
+    ret.append("error");
     return ret;
 }
 ////////////////////////////////////////////////////////////////////

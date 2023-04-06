@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>music</title>
+        <link rel="stylesheet" href="./music.css">
+    </head>
+    <body>
+        <h1>hello</h1>
+    </body>
+    <!--<script src="https://unpkg.com/petite-vue@0.4.1/dist/petite-vue.iife.js"></script>-->
+
+    <script src="./pvue.js"></script>
+    <script src="./music.js"></script>
+    <script>
+        const core = window._PlayerCore;
+        core.AppendSong({
+            name : "Old Memory",
+            id : 0,
+            src : "./Old Memory.mp3",
+            img : "./music.ico"
+        })
+        core.AppendSong({
+            name : "Only wish",
+            id : 1,
+            src : "./Only wish.mp3",
+            img : "./music.ico"
+        });
+    </script>
+</html>

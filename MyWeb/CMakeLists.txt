@@ -14,8 +14,8 @@ set(mysql_lib /www/server/mysql/lib)
 add_executable(main main.cpp ${tools}/_reactor.cpp ${tools}/_log.cpp  
                     ${tools}/_network.cpp ${tools}/_threadpool.cpp ${tools}/_channel.cpp
                     ${tools}/_directory.cpp ${tools}/_mysql.cpp ${tools}/_dbpool.cpp
-                    ${tools}/_http.cpp ${tools}/http_parser.cpp
-                    ${src}/get.cpp ${src}/login.cpp ${src}/upload.cpp)
+                    ${tools}/_http.cpp ${tools}/http_parser.cpp ${tools}/_time.cpp
+                    ${src}/response.cpp ${src}/login.cpp ${src}/upload.cpp ${src}/show.cpp ${src}/message.cpp)
 
 target_include_directories(main PUBLIC ${tools} ${src} ${json_include} ${mysql_include} ${mysql_lib})
 target_link_libraries(main pthread mysqlclient)

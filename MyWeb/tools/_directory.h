@@ -82,7 +82,7 @@ public :
      */
     bool remove();
 
-    const char* name();
+    const std::string& name();
 private :
     /**
      * @brief 文件的类型和存取的权限。

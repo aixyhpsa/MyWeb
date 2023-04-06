@@ -2,113 +2,53 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Swiper demo</title>
+    <title>欢迎</title>
+    <!--
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
     />
-    <!-- Demo styles -->
+    -->
+    <link rel="stylesheet" href="./music.css">
     <link rel="stylesheet" href="./swiper-bundle.css">
-    <link rel="shortcut icon" href="favicon.ico">
-    <style>
-        html,
-        body {
-            position: relative;
-            height: 100%;
-        }
-
-        body {
-            background: #eee;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #000;
-            margin: 0;
-            padding: 0;
-        }
-
-        .swiper {
-            width: 100%;
-            height: 100%;
-        }
-
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-        }
-
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /**********************上传和下载**********************/
-        table {
-            border:none;
-        }
-        tr{
-            /*border:none;*/
-            color: #000;
-            /*transition: all .3s;*/
-        }
-        th{
-            padding: 10px;
-            border-top: none;
-            border-bottom: none;
-        }
-        td{
-            /*鼠标变手性*/
-            cursor: pointer;
-            padding: 10px;
-            border:none;
-        }
-        #content{
-            height: 500px;
-            width: 90%;
-            /*滚轮效果*/
-            overflow: auto;
-        }
-        .select{
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        .upload{
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./show.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./message.css">
 </head>
 <body>
     <!-- Swiper -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
+
+        <!----------------------登录---------------------->
+        <div class="swiper-slide">1
+            <!--
+            <form action="" class="login">
+                <p>管理员登录</p>
+                <input type="text" placeholder="用户名">
+                <input type="password" placeholder="密码">
+                <input type="submit" class="btn" value="登  录">
+            </form>       
+            -->
+            <form action="" class="login">
+                <h1 class="tt">登录</h1>
+                <input type="text" placeholder="用户名">
+                <input type="password" placeholder="密码">
+                <input type="submit" class="btn tt" value="登 录" >
+            </form>
+        </div>
 
         <!----------------------上传和下载---------------------->
         <div class="swiper-slide">
-            <div id="content">
                 <!-- <button class="select" type="button" onclick="bianli()">遍历表格</button> -->
                 <form class="select" action="" method="post" enctype="multipart/form-data">
                     <input type="file" name="fileName">
                 </form>
-                <button class="upload" type="button" onclick="addRow()">添加</button>
+                <!--<button class="upload" type="button" onclick="addRow()">添加</button>-->
+                <button class="upload" type="button" onclick="">上传</button>
+            <div id="content">
+
                 <!--文件列表-->
                 <table id="myTable" border="1" cellpadding="0" cellspacing="0" width="90%"  style="text-align: center;">
                     <tr> 
@@ -118,21 +58,45 @@
             </div>
         </div>
 
-        <div class="swiper-slide">Slide 3</div>
+        <!----------------------留言板---------------------->
+        <div class="swiper-slide">
+            <div class="message">
+                <textarea></textarea>
+                <button>发布</button>
+                <ul></ul>
+            </div>
+        </div>
+        <!--
         <div class="swiper-slide">Slide 4</div>
         <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
+        -->
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
 
+    <!--音乐播放器-->
+    <script src="./pvue.js"></script>
+    <script src="./music.js"></script>
+    <script>
+        const core = window._PlayerCore;
+        core.AppendSong({
+            name : "Old Memory",
+            id : 0,
+            src : "./Old Memory.mp3",
+            img : "./music.ico"
+        })
+        core.AppendSong({
+            name : "Only wish",
+            id : 1,
+            src : "./Only wish.mp3",
+            img : "./music.ico"
+        });
+    </script>
+
     <!---->
-    <script src="./swiper-bundle.js"></script>
-    <!--<script src="000/bootstrap/bootstrap-3.4.1-dist/js/jquery-1.10.2.min.js"></script>-->
+    <script src= "./swiper-bundle.js"></script>
+    <script src = "https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
@@ -145,72 +109,9 @@
     </script>
 
     <!--上传和下载-->
-    <script>
-        function bianli(){
-                var tab=document.getElementById("myTable");//获取到了表格的js对象 //获取表格的所有行
-            var trArr=tab.rows;//遍历行
-            for(var i=0;i<trArr.length;i++){
-                var trObj=trArr[i]; //alert("行的下标索引:"+trObj.rowIndex); //获取每行的单元格的集合
-                var tdArr=trObj.cells;
-            //遍历每个单元格
-                var str="";
-                for(var j=0;j<tdArr.length;j++){
-                var tdObj=tdArr[j];
-                var html=tdObj.innerHTML;//获取每个单元格中的内容 
-                var index=tdObj.cellIndex;//获取每个单元格的下标索引 str+=index+"-"+html+"=====";
-            }
-            console.log("行的下标索引:"+trObj.rowIndex+":"+str); }
-        }
-        
-        function addRow(){ //获取到表格的对象
-            var tab=document.getElementById("myTable");
-            //给表格添加一行
-            let newTr=tab.insertRow();//创建了一个空行，在页面上看不出来 //给新创建的行添加列
-            var newTd1=newTr.insertCell();//给新的行创建了一个新的单元格
-            var newTd2=newTr.insertCell();
-            var newTd3=newTr.insertCell();
-            var newTd4=newTr.insertCell();
-            var newTd5=newTr.insertCell();
-            //给每一个单元格中添加内容
-            var num=parseInt(Math.random()*10)+1;
-            newTd1.innerHTML=num;
-            newTd2.innerHTML="小熊饼干"+num;
-            newTd3.innerHTML="$125";
-            newTd4.innerHTML="1";
-            newTd5.innerHTML='<button type="button" onclick="delRow(this)">删除</button>'; 
-            // 鼠标移动变色
-            newTr.addEventListener("mouseenter", function(){
-                this.style.color= "pink";
-            });
-            newTr.addEventListener("mouseleave", function(){
-                this.style.color= "black";
-            });
-        }
-        
-        function delRow(btn){
-            var tab=document.getElementById("myTable"); 
-            //btn:表示点击的当前的删除按钮， 
-            //btn.parentNode获取的按钮的父元素td,btn.parentNode.parentNode获取的按钮的父元素td的父元素tr
-            var trIndex=btn.parentNode.parentNode.rowIndex;
-            //根据行的下标索引删除行
-            tab.deleteRow(trIndex);
-        }
+    <script src= "./show.js"></script>
 
-        let upload = document.querySelector(".upload");
-        upload.addEventListener("click", function(){
-            let form = document.querySelector(".select");
-            let fd = new FormData(form);
-            let xhr = new XMLHttpRequest();
-            xhr.open("POST", "http://dx191dya.com:5099/upload");
-            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            xhr.send(fd);
-            xhr.onreadystatechange = function(){
-                if (xhr.readyState >= 3)
-                {
-                    alert("OK");
-                }
-            }
-        });
-    </script>
+    <!--留言-->
+    <script src= "./message.js"></script>
 </body>
 </html>

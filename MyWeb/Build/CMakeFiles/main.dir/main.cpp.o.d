@@ -181,8 +181,9 @@ CMakeFiles/main.dir/main.cpp.o: /home/wucz/test/MyWeb/main.cpp \
  /usr/include/c++/10/bits/unordered_map.h \
  /usr/include/c++/10/bits/erase_if.h \
  /home/wucz/test/MyWeb/tools/http_parser.h \
- /home/wucz/test/MyWeb/src/upload.h \
- /home/wucz/test/MyWeb/./tools/_directory.h /usr/include/sys/stat.h \
+ /home/wucz/test/MyWeb/src/upload.h /home/wucz/test/MyWeb/src/login.h \
+ /home/wucz/test/MyWeb/src/show.h \
+ /home/wucz/test/MyWeb/src/../tools/_directory.h /usr/include/sys/stat.h \
  /usr/include/bits/stat.h /usr/include/bits/statx.h \
  /usr/include/linux/stat.h /usr/include/linux/types.h \
  /usr/include/asm/types.h /usr/include/asm-generic/types.h \
@@ -191,5 +192,96 @@ CMakeFiles/main.dir/main.cpp.o: /home/wucz/test/MyWeb/main.cpp \
  /usr/include/bits/types/struct_statx.h /usr/include/dirent.h \
  /usr/include/bits/dirent.h /usr/include/bits/posix1_lim.h \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/dirent_ext.h /home/wucz/test/MyWeb/src/login.h \
- /home/wucz/test/MyWeb/src/get.h
+ /usr/include/bits/dirent_ext.h /usr/include/c++/10/cassert \
+ /usr/include/assert.h /home/wucz/test/MyWeb/./tools/nlohmann/json.hpp \
+ /usr/include/c++/10/algorithm /usr/include/c++/10/bits/stl_algo.h \
+ /usr/include/c++/10/bits/algorithmfwd.h \
+ /usr/include/c++/10/bits/uniform_int_dist.h /usr/include/c++/10/cstddef \
+ /usr/include/c++/10/iterator /usr/include/c++/10/bits/stream_iterator.h \
+ /home/wucz/test/MyWeb/./tools/nlohmann/adl_serializer.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/abi_macros.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/conversions/from_json.hpp \
+ /usr/include/c++/10/forward_list /usr/include/c++/10/bits/forward_list.h \
+ /usr/include/c++/10/bits/forward_list.tcc /usr/include/c++/10/map \
+ /usr/include/c++/10/bits/stl_tree.h /usr/include/c++/10/bits/stl_map.h \
+ /usr/include/c++/10/bits/stl_multimap.h /usr/include/c++/10/valarray \
+ /usr/include/c++/10/cmath /usr/include/math.h \
+ /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
+ /usr/include/bits/fp-fast.h \
+ /usr/include/bits/mathcalls-helper-functions.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
+ /usr/include/bits/iscanonical.h \
+ /usr/include/c++/10/bits/valarray_array.h \
+ /usr/include/c++/10/bits/valarray_array.tcc \
+ /usr/include/c++/10/bits/valarray_before.h \
+ /usr/include/c++/10/bits/slice_array.h \
+ /usr/include/c++/10/bits/valarray_after.h \
+ /usr/include/c++/10/bits/gslice.h \
+ /usr/include/c++/10/bits/gslice_array.h \
+ /usr/include/c++/10/bits/mask_array.h \
+ /usr/include/c++/10/bits/indirect_array.h \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/exceptions.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/value_t.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/macro_scope.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/meta/detected.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/meta/void_t.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/thirdparty/hedley/hedley.hpp \
+ /usr/include/c++/10/version \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/string_escape.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/input/position_t.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/meta/cpp_future.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/meta/type_traits.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/iterators/iterator_traits.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/meta/call_std/begin.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/meta/call_std/end.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/json_fwd.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/string_concat.hpp \
+ /usr/include/c++/10/cstring \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/meta/identity_tag.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/meta/std_fs.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/conversions/to_json.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/iterators/iteration_proxy.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/byte_container_with_subtype.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/hash.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/input/binary_reader.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/input/input_adapters.hpp \
+ /usr/include/c++/10/numeric /usr/include/c++/10/bits/stl_numeric.h \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/input/json_sax.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/input/lexer.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/meta/is_sax.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/input/parser.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/iterators/internal_iterator.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/iterators/primitive_iterator.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/iterators/iter_impl.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/iterators/json_reverse_iterator.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/json_custom_base_class.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/json_pointer.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/json_ref.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/output/binary_writer.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/output/output_adapters.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/output/serializer.hpp \
+ /usr/include/c++/10/iomanip /usr/include/c++/10/locale \
+ /usr/include/c++/10/bits/locale_facets_nonio.h \
+ /usr/include/c++/10/x86_64-redhat-linux/bits/time_members.h \
+ /usr/include/c++/10/x86_64-redhat-linux/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/10/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/10/bits/locale_conv.h \
+ /usr/include/c++/10/bits/quoted_string.h /usr/include/c++/10/sstream \
+ /usr/include/c++/10/bits/sstream.tcc \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/conversions/to_chars.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/ordered_map.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/detail/macro_unscope.hpp \
+ /home/wucz/test/MyWeb/./tools/nlohmann/thirdparty/hedley/hedley_undef.hpp \
+ /home/wucz/test/MyWeb/src/message.h /home/wucz/test/MyWeb/src/response.h \
+ /usr/include/signal.h /usr/include/bits/signum-generic.h \
+ /usr/include/bits/signum-arch.h /usr/include/bits/types/sig_atomic_t.h \
+ /usr/include/bits/types/siginfo_t.h /usr/include/bits/types/__sigval_t.h \
+ /usr/include/bits/siginfo-arch.h /usr/include/bits/siginfo-consts.h \
+ /usr/include/bits/siginfo-consts-arch.h \
+ /usr/include/bits/types/sigval_t.h /usr/include/bits/types/sigevent_t.h \
+ /usr/include/bits/sigevent-consts.h /usr/include/bits/sigaction.h \
+ /usr/include/bits/sigcontext.h /usr/include/bits/types/stack_t.h \
+ /usr/include/sys/ucontext.h /usr/include/bits/sigstack.h \
+ /usr/include/bits/ss_flags.h /usr/include/bits/types/struct_sigstack.h \
+ /usr/include/bits/sigthread.h /usr/include/bits/signal_ext.h

@@ -153,30 +153,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/get.o: src/get.cpp.o
-.PHONY : src/get.o
-
-# target to build an object file
-src/get.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/get.cpp.o
-.PHONY : src/get.cpp.o
-
-src/get.i: src/get.cpp.i
-.PHONY : src/get.i
-
-# target to preprocess a source file
-src/get.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/get.cpp.i
-.PHONY : src/get.cpp.i
-
-src/get.s: src/get.cpp.s
-.PHONY : src/get.s
-
-# target to generate assembly for a file
-src/get.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/get.cpp.s
-.PHONY : src/get.cpp.s
-
 src/login.o: src/login.cpp.o
 .PHONY : src/login.o
 
@@ -200,6 +176,78 @@ src/login.s: src/login.cpp.s
 src/login.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/login.cpp.s
 .PHONY : src/login.cpp.s
+
+src/message.o: src/message.cpp.o
+.PHONY : src/message.o
+
+# target to build an object file
+src/message.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/message.cpp.o
+.PHONY : src/message.cpp.o
+
+src/message.i: src/message.cpp.i
+.PHONY : src/message.i
+
+# target to preprocess a source file
+src/message.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/message.cpp.i
+.PHONY : src/message.cpp.i
+
+src/message.s: src/message.cpp.s
+.PHONY : src/message.s
+
+# target to generate assembly for a file
+src/message.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/message.cpp.s
+.PHONY : src/message.cpp.s
+
+src/response.o: src/response.cpp.o
+.PHONY : src/response.o
+
+# target to build an object file
+src/response.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/response.cpp.o
+.PHONY : src/response.cpp.o
+
+src/response.i: src/response.cpp.i
+.PHONY : src/response.i
+
+# target to preprocess a source file
+src/response.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/response.cpp.i
+.PHONY : src/response.cpp.i
+
+src/response.s: src/response.cpp.s
+.PHONY : src/response.s
+
+# target to generate assembly for a file
+src/response.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/response.cpp.s
+.PHONY : src/response.cpp.s
+
+src/show.o: src/show.cpp.o
+.PHONY : src/show.o
+
+# target to build an object file
+src/show.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/show.cpp.o
+.PHONY : src/show.cpp.o
+
+src/show.i: src/show.cpp.i
+.PHONY : src/show.i
+
+# target to preprocess a source file
+src/show.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/show.cpp.i
+.PHONY : src/show.cpp.i
+
+src/show.s: src/show.cpp.s
+.PHONY : src/show.s
+
+# target to generate assembly for a file
+src/show.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/show.cpp.s
+.PHONY : src/show.cpp.s
 
 src/upload.o: src/upload.cpp.o
 .PHONY : src/upload.o
@@ -441,6 +489,30 @@ tools/_threadpool.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/tools/_threadpool.cpp.s
 .PHONY : tools/_threadpool.cpp.s
 
+tools/_time.o: tools/_time.cpp.o
+.PHONY : tools/_time.o
+
+# target to build an object file
+tools/_time.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/tools/_time.cpp.o
+.PHONY : tools/_time.cpp.o
+
+tools/_time.i: tools/_time.cpp.i
+.PHONY : tools/_time.i
+
+# target to preprocess a source file
+tools/_time.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/tools/_time.cpp.i
+.PHONY : tools/_time.cpp.i
+
+tools/_time.s: tools/_time.cpp.s
+.PHONY : tools/_time.s
+
+# target to generate assembly for a file
+tools/_time.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/tools/_time.cpp.s
+.PHONY : tools/_time.cpp.s
+
 tools/http_parser.o: tools/http_parser.cpp.o
 .PHONY : tools/http_parser.o
 
@@ -477,12 +549,18 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/get.o"
-	@echo "... src/get.i"
-	@echo "... src/get.s"
 	@echo "... src/login.o"
 	@echo "... src/login.i"
 	@echo "... src/login.s"
+	@echo "... src/message.o"
+	@echo "... src/message.i"
+	@echo "... src/message.s"
+	@echo "... src/response.o"
+	@echo "... src/response.i"
+	@echo "... src/response.s"
+	@echo "... src/show.o"
+	@echo "... src/show.i"
+	@echo "... src/show.s"
 	@echo "... src/upload.o"
 	@echo "... src/upload.i"
 	@echo "... src/upload.s"
@@ -513,6 +591,9 @@ help:
 	@echo "... tools/_threadpool.o"
 	@echo "... tools/_threadpool.i"
 	@echo "... tools/_threadpool.s"
+	@echo "... tools/_time.o"
+	@echo "... tools/_time.i"
+	@echo "... tools/_time.s"
 	@echo "... tools/http_parser.o"
 	@echo "... tools/http_parser.i"
 	@echo "... tools/http_parser.s"

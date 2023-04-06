@@ -1,2 +1,0 @@
-2023-04-03 13:26:21 DEBUG /home/wucz/test/MyWeb/src/login.cpp 81 select count(password) from user where accountNumber=? and password=?
-2023-04-03 13:26:21 DEBUG /home/wucz/test/MyWeb/src/login.cpp 81 select count(password) from user where accountNumber=? and password=?

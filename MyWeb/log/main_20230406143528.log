@@ -1,0 +1,38 @@
+2023-04-06 14:35:40 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /
+2023-04-06 14:35:41 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.css
+2023-04-06 14:35:41 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.css
+2023-04-06 14:35:41 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /login.css
+2023-04-06 14:35:41 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.css
+2023-04-06 14:35:41 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /index.css
+2023-04-06 14:35:41 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.css
+2023-04-06 14:35:41 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /pvue.js
+2023-04-06 14:35:41 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.js
+2023-04-06 14:35:41 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.js
+2023-04-06 14:35:41 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.js
+2023-04-06 14:35:41 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /src/assets/icon.jpg
+2023-04-06 14:35:41 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.js
+2023-04-06 14:35:42 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"showList":"rootPath"}
+2023-04-06 14:35:51 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.ico
+2023-04-06 14:35:51 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /Old%20Memory.mp3
+2023-04-06 14:35:54 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /Only%20wish.mp3
+2023-04-06 14:35:56 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /Old%20Memory.mp3
+2023-04-06 14:57:02 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /
+2023-04-06 14:57:02 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.css
+2023-04-06 14:57:02 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.css
+2023-04-06 14:57:02 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /login.css
+2023-04-06 14:57:02 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.css
+2023-04-06 14:57:02 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /index.css
+2023-04-06 14:57:02 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /pvue.js
+2023-04-06 14:57:02 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.css
+2023-04-06 14:57:02 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.js
+2023-04-06 14:57:02 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.js
+2023-04-06 14:57:02 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.js
+2023-04-06 14:57:07 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.js
+2023-04-06 14:57:07 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /src/assets/icon.jpg
+2023-04-06 14:57:08 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"showList":"rootPath"}
+2023-04-06 14:57:08 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /favicon.ico
+2023-04-06 14:57:12 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /Old_Memory.mp3

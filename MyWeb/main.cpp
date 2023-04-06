@@ -6,83 +6,64 @@
 #include "src/upload.h"
 #include "src/login.h"
 #include "src/show.h"
+#include "src/message.h"
 #include "src/response.h"
 
+#include <signal.h>
 #include <string>
 
-std::string request{"POST / HTTP/1.1\r\n"
-    "Host:img.mukewang.com\r\n"
-    "User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64)"
-    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36\r\n"
-    "Accept:image/webp,image/*,*/*;q=0.8\r\n"
-    "Referer:http://www.imooc.com/\r\n"
-    "Accept-Encoding:gzip, deflate, sdch\r\n"
-    "Accept-Language:zh-CN,zh;q=0.8\r\n"
-    // POST方法必须要有Content-Length这个字段
-    // 而且字段值必须要大于等于实际长度
-    // 如果小于只能解析部分内容，并且errno设置为HPE_INVALID_METHOD
-    "Content-Length: 5\r\n"
-    "\r\n"
-    "12345"};
-
-std::string response{"HTTP/1.1 200 OK\r\n"
+std::string response{"HTTP/1.1 404 Not Found\r\n"
     "Access-Control-Allow-Origin: *\r\n"
-    "Server: demo26\r\n"
+    "Server: dx191dya.com\r\n"
     "Connection: keep-alive\r\n"
-    "Transfer-Encoding: chunked\r\n"
+    "Content-Type:text/html;charset=utf-8\r\n"
+    "Content-Length:61\r\n\r\n"
+    "<html><head>404</head><body><h1>Not Found</h1></body></html>"
 };
 
-std::string rootpath = "/home/wucz/test/MyWeb/resource";
-
-std::string text_type = "Content-Type: text/html;charset=utf-8\r\n\r\n";
-std::string img_type = "Content-Type: image/jpeg\r\n\r\n";
+void EXIT(int sig)
+{
+    exit(0);
+}
 
 int main()
 {
+    // 信号处理
+    for (int i=1; i<=64; ++i)
+    {
+        ::signal(i, SIG_IGN);
+    }
+    ::signal(2, EXIT);
+    ::signal(15, EXIT);
+
     dya::Singleton<dya::DatebasePool>::instance("8.130.105.64,root,bilibili2022,test0715,3306", "utf8", 10, 10);
     LOG_INIT("/home/wucz/test/MyWeb/log/main", true);
-    LOG_SET_LEVEL(dya::Logger::INFO);
-
+    LOG_SET_LEVEL(dya::Logger::DEBUG);
+    // 指定端口
     dya::Reactor master(5099);
-    /*
-    auto fn = [](std::string &readBuff)->std::string{
-        LOG_INFO("\n%s\n", readBuff.c_str());
+
+    auto fn = [](std::string &readBuff)->std::string
+    {
         dya::Http http;
-        if (http.parser(readBuff) == false)
+        http.parser(readBuff);
+
+        // GET请求
+        if (http["url"].compare("/post") != 0)
         {
-            return response+http.m_errno;
+            LOG_DEBUG("GET %s\n", http["url"].c_str());
+            dya::Get get(http["url"]);
+            return get.getResponse();;
         }
-        for (auto &it : http.m_result)
+        else
         {
-            LOG_DEBUG("key:%s  value:%s\n", it.first.c_str(), it.second.c_str());
+            // POST请求
+            LOG_DEBUG("\nPOST %s\n%s\n", http["url"].c_str(), http["body"].c_str());
+            dya::Post post(http["body"]);
+            return post.getResponse();
         }
-        // 判断是不是GET
-        if (http.m_result.find("body") == http.m_result.end())
-        {
-            dya::Get get;
-            std::string name;
-            if (http.m_result["url"] == "/")
-            {
-                name = rootpath + "/" + "index.html";
-                if (get.set(name.c_str()) == false)
-                {
-                    return response + "没有文件";
-                }
-                LOG_INFO("%s\n", "index send");
-                return response + get.get();
-            }
-            name = rootpath + http.m_result["url"];
-            if (get.set(name.c_str()) == false)
-            {
-                return response + "没有文件";
-            }
-            LOG_INFO("%s\n", "js or css send");
-            return response + get.get();
-        }
-        return response + "不是GET";
+        return response;
     };
 
     master.setParse(fn);
     master.loop();
-    */
 }

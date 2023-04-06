@@ -90,15 +90,26 @@ void ClientChannel::handle()
 
     int count = 0;
     int sum = 0;
+    //std::cout << "一共要发送:" << m_sendBuff.size() << "\n";
     while (true)
     {
         count = send(m_socket.getfd(), &m_sendBuff[sum], m_sendBuff.size()-sum, 0);
-        if (count <= 0)
+        //std::cout << "这次发送了:" << count << "\n";
+        // 出现 EAGAIN 一般是发送缓冲区满了，要稍等一会再发的意思
+        if (count == -1 && errno == EAGAIN)
+        {
+            usleep(10);
+            continue;
+        }
+        if (count == -1 && errno == EINTR)
+            continue;
+        if (count == 0)
             break;
         sum += count;
         if (sum == m_sendBuff.size())
             break;
     }
+    //std::cout << "这次发送完毕了\n\n";
     m_readBuff.clear();
     m_sendBuff.clear();
 }
@@ -110,10 +121,13 @@ void ClientChannel::getReadBuff()
     {
         // -1代表错误；0代表断开连接
         int bytes = recv(m_socket.getfd(), tempBuff, 1024, 0);
-        // 客户端正常中断，继续读取
+        // 客户端正常中断，继续读取。
+        // EINTR  4  中断的系统调用(interrupted system call)
         if (bytes == -1 && (errno == EINTR))
             continue;
         // 非阻塞IO，这个条件表示数据全部读取完毕
+        // EAGIN  11  再试一次(try again)
+        // EWOULDBLOCK  11  操作将阻塞(operation would block)
         if (bytes == -1 && ((errno == EAGAIN) || (errno == EWOULDBLOCK)))
             break;
         // 断开连接
