@@ -125,7 +125,7 @@ CMakeFiles/main.dir/tools/_dbpool.cpp.o: \
  /usr/include/c++/10/bits/shared_ptr_atomic.h \
  /usr/include/c++/10/bits/atomic_base.h \
  /usr/include/c++/10/bits/atomic_lockfree_defines.h \
- /usr/include/c++/10/backward/auto_ptr.h \
+ /usr/include/c++/10/backward/auto_ptr.h /usr/include/c++/10/thread \
  /home/wucz/test/MyWeb/tools/_mysql.h /usr/include/string.h \
  /usr/include/strings.h /usr/include/c++/10/stdlib.h \
  /www/server/mysql/include/mysql.h \

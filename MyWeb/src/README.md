@@ -1,20 +1,36 @@
 ## server
 1. 登录(login)
-"登录成功"
+成功：
+    "登录成功"
+失败：
+    "error"
+
 
 2. 上传(upload)
-"上传成功"
+成功：
+    "上传成功"
+失败：
+    "error"
+
 
 3. 展示文件列表(show)
-{
-    "/home/wucz/..." : {"size" : xx, "date" : "xxx", "type" : "dir"},
-    "/home/wucz/..." : {"size" : xx, "date" : "xxx", "type" : "dir"}
-}
+成功：
+    {
+        "/home/wucz/..." : {"size" : xx, "date" : "xxx", "type" : "dir"},
+        "/home/wucz/..." : {"size" : xx, "date" : "xxx", "type" : "dir"}
+    }
+失败：
+    "error"
+
 
 4. 留言板(message)
-{
-    "1" : {"time" : "xxx", "message" : "xxx"}
-}
+成功：
+    {
+        "1" : {"time" : "xxx", "message" : "xxx"}
+    }
+失败：
+    "error"
+
 
 ## client
 1. 登录(login)

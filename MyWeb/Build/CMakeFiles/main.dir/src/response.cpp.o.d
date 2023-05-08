@@ -162,10 +162,22 @@ CMakeFiles/main.dir/src/response.cpp.o: \
  /usr/include/c++/10/bits/stl_vector.h \
  /usr/include/c++/10/bits/stl_bvector.h \
  /usr/include/c++/10/bits/vector.tcc /usr/include/c++/10/cassert \
- /usr/include/assert.h /home/wucz/test/MyWeb/./tools/nlohmann/json.hpp \
+ /usr/include/assert.h /home/wucz/test/MyWeb/src/../tools/_log.h \
+ /usr/include/c++/10/thread /usr/include/c++/10/chrono \
+ /usr/include/c++/10/ratio /usr/include/c++/10/ctime \
+ /usr/include/c++/10/bits/parse_numbers.h \
+ /home/wucz/test/MyWeb/src/../tools/_mqueue.hpp \
+ /usr/include/c++/10/condition_variable \
+ /usr/include/c++/10/bits/std_mutex.h \
+ /usr/include/c++/10/bits/unique_lock.h /usr/include/c++/10/mutex \
+ /usr/include/c++/10/queue /usr/include/c++/10/deque \
+ /usr/include/c++/10/bits/stl_deque.h /usr/include/c++/10/bits/deque.tcc \
+ /usr/include/c++/10/bits/stl_heap.h /usr/include/c++/10/bits/stl_queue.h \
+ /home/wucz/test/MyWeb/src/../tools/_singleton.hpp \
+ /home/wucz/test/MyWeb/src/../tools/_nocopyable.h \
+ /home/wucz/test/MyWeb/src/../tools/nlohmann/json.hpp \
  /usr/include/c++/10/algorithm /usr/include/c++/10/bits/stl_algo.h \
  /usr/include/c++/10/bits/algorithmfwd.h \
- /usr/include/c++/10/bits/stl_heap.h \
  /usr/include/c++/10/bits/uniform_int_dist.h /usr/include/c++/10/cstddef \
  /usr/include/c++/10/functional /usr/include/c++/10/bits/std_function.h \
  /usr/include/c++/10/iterator /usr/include/c++/10/bits/stream_iterator.h \
@@ -233,7 +245,7 @@ CMakeFiles/main.dir/src/response.cpp.o: \
  /home/wucz/test/MyWeb/./tools/nlohmann/detail/output/output_adapters.hpp \
  /home/wucz/test/MyWeb/./tools/nlohmann/detail/output/serializer.hpp \
  /usr/include/c++/10/iomanip /usr/include/c++/10/locale \
- /usr/include/c++/10/bits/locale_facets_nonio.h /usr/include/c++/10/ctime \
+ /usr/include/c++/10/bits/locale_facets_nonio.h \
  /usr/include/c++/10/x86_64-redhat-linux/bits/time_members.h \
  /usr/include/c++/10/x86_64-redhat-linux/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/10/bits/locale_facets_nonio.tcc \
@@ -245,4 +257,6 @@ CMakeFiles/main.dir/src/response.cpp.o: \
  /home/wucz/test/MyWeb/./tools/nlohmann/detail/macro_unscope.hpp \
  /home/wucz/test/MyWeb/./tools/nlohmann/thirdparty/hedley/hedley_undef.hpp \
  /home/wucz/test/MyWeb/src/login.h /home/wucz/test/MyWeb/src/upload.h \
- /home/wucz/test/MyWeb/src/show.h /home/wucz/test/MyWeb/src/message.h
+ /home/wucz/test/MyWeb/src/show.h \
+ /home/wucz/test/MyWeb/./tools/nlohmann/json.hpp \
+ /home/wucz/test/MyWeb/src/message.h

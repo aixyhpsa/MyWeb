@@ -7,16 +7,18 @@ function addMessage(content) {
     let li = document.createElement("li");
     //将文本框中的内容放到li中,a标签中href中的内容代表什么都不执行
     li.innerHTML = content + "<a href='javascript:;'>删除</a>"
+    //li.innerHTML = content;
     txt.value = "";//添加之后文本框的内容清空
     //将留言添加到ul中，而且在最上方
     ul.insertBefore(li, ul.children[0]);
+
     //当点击删除时删除ul中的li
     let as = document.querySelectorAll("a");
     //循环给每个删除绑定事件
     for (let i = 0; i < as.length; i++) {
         as[i].onclick = function () {
-            //删除当前a标签所在位置的父节点li
-            ul.removeChild(this.parentNode);
+        //删除当前a标签所在位置的父节点li
+        ul.removeChild(this.parentNode);
         }
     }
 }
@@ -29,7 +31,7 @@ btn.onclick = function () {
     } 
     else 
     {
-        let meg = "{\"Message_add\":" + "\"" + txt.value + "\"" + "}";
+        let meg = "{\"message_add\":" + "\"" + txt.value + "\"" + "}";
         let xhr = new XMLHttpRequest();
         xhr.open("POST", "http://dx191dya.com/post");
         xhr.send(meg);
@@ -38,13 +40,20 @@ btn.onclick = function () {
             {
                 if (xhr.status >= 200 && xhr.status < 300)
                 {
-                    // 解析json
-
-                    addMessage();
-                }
-                else
-                {
-                    alert("发布失败，服务器异常");
+                    // response是响应体
+                    if (xhr.response != "error")
+                    {
+                        let ret = JSON.parse(xhr.response);
+                        for (let k in ret)
+                        {
+                            //addOneRow(k, ret[k].date, ret[k].type, ret[k].size);
+                            addMessage(ret[k].time + "  " + ret[k].message);
+                        }
+                    }
+                    else
+                    {
+                        alert("发布失败，服务器异常");
+                    }
                 }
             }
         }
@@ -54,7 +63,7 @@ btn.onclick = function () {
 // 窗口加载事件
 window.addEventListener("load", function(){
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://dx191dya.com:5099/post");
+    xhr.open("POST", "http://dx191dya.com/post");
     xhr.send('{"message_show":"all"}');
     xhr.onreadystatechange = function(){
         if (xhr.readyState === 4)
@@ -63,16 +72,20 @@ window.addEventListener("load", function(){
             if (xhr.status >= 200 && xhr.status < 300)
             {
                 // response是响应体
-                let ret = JSON.parse(xhr.response);
-                for (let k in ret)
+                if (xhr.response != "error")
                 {
-                    addOneRow(k, ret[k].date, ret[k].type, ret[k].size);
+                    let ret = JSON.parse(xhr.response);
+                    for (let k in ret)
+                    {
+                        //addOneRow(k, ret[k].date, ret[k].type, ret[k].size);
+                        addMessage(ret[k].time + "         " + ret[k].message);
+                    }
+                }
+                else
+                {
+                    alert("发布失败，服务器异常");
                 }
             }
-        }
-        else
-        {
-            console.log("加载留言失败");
         }
     };
 });

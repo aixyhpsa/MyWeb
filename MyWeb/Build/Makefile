@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named procctl
+
+# Build rule for target.
+procctl: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 procctl
+.PHONY : procctl
+
+# fast build rule for target.
+procctl/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/procctl.dir/build.make CMakeFiles/procctl.dir/build
+.PHONY : procctl/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -537,6 +550,30 @@ tools/http_parser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/tools/http_parser.cpp.s
 .PHONY : tools/http_parser.cpp.s
 
+tools/procctl.o: tools/procctl.cpp.o
+.PHONY : tools/procctl.o
+
+# target to build an object file
+tools/procctl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/procctl.dir/build.make CMakeFiles/procctl.dir/tools/procctl.cpp.o
+.PHONY : tools/procctl.cpp.o
+
+tools/procctl.i: tools/procctl.cpp.i
+.PHONY : tools/procctl.i
+
+# target to preprocess a source file
+tools/procctl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/procctl.dir/build.make CMakeFiles/procctl.dir/tools/procctl.cpp.i
+.PHONY : tools/procctl.cpp.i
+
+tools/procctl.s: tools/procctl.cpp.s
+.PHONY : tools/procctl.s
+
+# target to generate assembly for a file
+tools/procctl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/procctl.dir/build.make CMakeFiles/procctl.dir/tools/procctl.cpp.s
+.PHONY : tools/procctl.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -546,6 +583,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... procctl"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -597,6 +635,9 @@ help:
 	@echo "... tools/http_parser.o"
 	@echo "... tools/http_parser.i"
 	@echo "... tools/http_parser.s"
+	@echo "... tools/procctl.o"
+	@echo "... tools/procctl.i"
+	@echo "... tools/procctl.s"
 .PHONY : help
 
 

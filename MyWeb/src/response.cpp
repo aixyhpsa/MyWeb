@@ -119,7 +119,12 @@ std::string Post::getResponse()
     {
         if (dya::Upload()(kUploadPath, m_buff))
             return this->success("上传成功");
-        return this->error();
+        return this->error(404, "上传失败");
+    }
+
+    if (m_buff.compare("No Cookie") == 0)
+    {
+        return this->success("未登录，请登录后重试");
     }
 
     nlohmann::json jRet = nlohmann::json::parse(m_buff.c_str());
@@ -129,8 +134,8 @@ std::string Post::getResponse()
         // 防SQL注入
         dya::Login login("select count(password) from user where accountNumber=:1 and password=:2");
         if (login(jRet["accountNumber"], jRet["password"]))
-            return this->success("登录成功");
-        return this->error();
+            return this->success("Set-Cookie:token=123\r\n","登录成功");
+        return this->error(404, "登录失败");
     }
 
     // 展示文件夹
@@ -154,7 +159,7 @@ std::string Post::getResponse()
         MessageBoard mb;
         auto ret =  mb.write(jRet["message_add"]);
         if (ret.size() == 0)
-            return this->error();
+            return this->error(404, "发布留言失败");
         return this->success(ret);
     }
     // 展示留言
@@ -163,15 +168,16 @@ std::string Post::getResponse()
         MessageBoard mb;
         auto ret =  mb.read();
         if (ret.size() == 0)
-            return this->error();
+            return this->error(503, "服务端错误");
         return this->success(ret);
     }
     // error修改
-    return this->error();
+    return this->error(404, "你的请求有误");
 }
 
 std::string Post::success(const std::string &responseBody)
 {
+    /*
     std::string ret;
     ret.append(kHead_200);
     ret.append(kAccess);
@@ -185,8 +191,30 @@ std::string Post::success(const std::string &responseBody)
     ret.append("\r\n\r\n");
     ret.append(responseBody);
     return ret;
+    */
+    return this->success("", responseBody);
 }
 
+std::string Post::success(const std::string &responseHead, const std::string &responseBody)
+{
+    std::string ret;
+    ret.append(kHead_200);
+    // 把额外的响应头加入报文
+    ret.append(responseHead);
+    // 默认的响应头：
+    ret.append(kAccess);
+    ret.append(kServer);
+    ret.append(kConnection);
+    ret.append(kContent_Type);
+    ret.append("text/plain");
+    ret.append(kContent_Type_charset);
+    ret.append(kContent_Length);
+    ret.append(std::to_string(responseBody.size()));
+    ret.append("\r\n\r\n");
+    ret.append(responseBody);
+    return ret;
+}
+/*
 std::string Post::error()
 {
     std::string ret;
@@ -199,6 +227,25 @@ std::string Post::error()
     ret.append(kContent_Type_charset);
     ret.append("\r\n");
     ret.append("error");
+    return ret;
+}
+*/
+std::string Post::error(int errorCode, const std::string &errorContent)
+{
+    std::string ret;
+    if (errorCode == 404)
+        ret.append(kHead_404);
+    else if (errorCode == 503)
+        ret.append(kHead_503);
+
+    ret.append(kAccess);
+    ret.append(kContent_Length);
+    ret.append(std::to_string(errorContent.size()) + "\r\n");
+    ret.append(kContent_Type);
+    ret.append("text/plain");
+    ret.append(kContent_Type_charset);
+    ret.append("\r\n");
+    ret.append(errorContent);
     return ret;
 }
 ////////////////////////////////////////////////////////////////////

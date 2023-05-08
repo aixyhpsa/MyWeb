@@ -20,3 +20,5 @@ add_executable(main main.cpp ${tools}/_reactor.cpp ${tools}/_log.cpp
 target_include_directories(main PUBLIC ${tools} ${src} ${json_include} ${mysql_include} ${mysql_lib})
 target_link_libraries(main pthread mysqlclient)
 target_link_directories(main PUBLIC ${mysql_lib})
+
+add_executable(procctl ./tools/procctl.cpp)

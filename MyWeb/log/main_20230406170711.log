@@ -1,0 +1,272 @@
+2023-04-06 17:07:21 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /
+2023-04-06 17:07:21 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.css
+2023-04-06 17:07:21 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.css
+2023-04-06 17:07:21 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.css
+2023-04-06 17:07:21 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /login.css
+2023-04-06 17:07:21 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /index.css
+2023-04-06 17:07:21 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /pvue.js
+2023-04-06 17:07:21 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.css
+2023-04-06 17:07:21 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.js
+2023-04-06 17:07:21 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.js
+2023-04-06 17:07:21 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.js
+2023-04-06 17:07:21 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.js
+2023-04-06 17:07:22 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /src/assets/icon.jpg
+2023-04-06 17:07:23 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"showList":"rootPath"}
+2023-04-06 17:07:23 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"message_show":"all"}
+2023-04-06 17:08:04 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /index.css
+2023-04-06 17:08:04 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.css
+2023-04-06 17:08:04 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.css
+2023-04-06 17:08:04 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.css
+2023-04-06 17:08:04 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.css
+2023-04-06 17:08:04 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /login.css
+2023-04-06 17:08:04 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.js.map
+2023-04-06 17:12:19 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /
+2023-04-06 17:12:20 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.css
+2023-04-06 17:12:20 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.css
+2023-04-06 17:12:20 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.css
+2023-04-06 17:12:20 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /login.css
+2023-04-06 17:12:20 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /index.css
+2023-04-06 17:12:20 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.css
+2023-04-06 17:12:20 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /pvue.js
+2023-04-06 17:12:20 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.js
+2023-04-06 17:12:20 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.js
+2023-04-06 17:12:20 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.js
+2023-04-06 17:12:20 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.js
+2023-04-06 17:12:20 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /src/assets/icon.jpg
+2023-04-06 17:12:22 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.js.map
+2023-04-06 17:12:22 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"showList":"rootPath"}
+2023-04-06 17:12:22 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"message_show":"all"}
+2023-04-06 17:12:22 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /favicon.ico
+2023-04-06 17:13:45 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /
+2023-04-06 17:13:45 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.css
+2023-04-06 17:13:45 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.css
+2023-04-06 17:13:45 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /login.css
+2023-04-06 17:13:45 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.css
+2023-04-06 17:13:45 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /index.css
+2023-04-06 17:13:45 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.css
+2023-04-06 17:13:45 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /pvue.js
+2023-04-06 17:13:45 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.js
+2023-04-06 17:13:45 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.js
+2023-04-06 17:13:45 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.js
+2023-04-06 17:13:45 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.js
+2023-04-06 17:13:45 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /src/assets/icon.jpg
+2023-04-06 17:13:46 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.js.map
+2023-04-06 17:13:47 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"showList":"rootPath"}
+2023-04-06 17:13:47 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /favicon.ico
+2023-04-06 17:13:47 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"message_show":"all"}
+2023-04-06 17:15:13 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+------WebKitFormBoundaryqjbJ1utayp02R4ET
+Content-Disposition: form-data; name="fileName"; filename="永不妥协计划.h"
+Content-Type: text/plain
+
+0-4	   二本+锅+大理石甲+草根+火腿棒+猪皮头+帐篷
+5-7    骑牛探路+蓝蘑菇林拿活木
+8-11   星杖+魔光+唤灵
+12-14  准备龙蝇物资
+15     龙蝇
+电羊工厂
+
+
+旺达
+锅		no
+帐篷	no
+火腿棒	yes
+石墙	yes
+打包三本和材料下远古，穿建造护符先四本再警告表
+不要忘记铥矿碎片
+
+------WebKitFormBoundaryqjbJ1utayp02R4ET--
+
+2023-04-06 17:16:30 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /
+2023-04-06 17:16:30 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.css
+2023-04-06 17:16:30 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.css
+2023-04-06 17:16:30 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.css
+2023-04-06 17:16:30 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.css
+2023-04-06 17:16:30 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /login.css
+2023-04-06 17:16:30 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /index.css
+2023-04-06 17:16:31 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.js
+2023-04-06 17:16:31 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /pvue.js
+2023-04-06 17:16:31 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.js
+2023-04-06 17:16:31 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.js
+2023-04-06 17:16:31 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.js
+2023-04-06 17:16:31 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /src/assets/icon.jpg
+2023-04-06 17:16:32 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"message_show":"all"}
+2023-04-06 17:16:32 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /favicon.ico
+2023-04-06 17:16:32 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"showList":"rootPath"}
+2023-04-06 17:17:18 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /
+2023-04-06 17:17:18 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.css
+2023-04-06 17:17:18 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.css
+2023-04-06 17:17:18 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /login.css
+2023-04-06 17:17:18 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.css
+2023-04-06 17:17:18 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /index.css
+2023-04-06 17:17:18 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.css
+2023-04-06 17:17:18 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.js
+2023-04-06 17:17:18 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /pvue.js
+2023-04-06 17:17:18 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.js
+2023-04-06 17:17:18 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.js
+2023-04-06 17:17:18 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.js
+2023-04-06 17:17:18 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /src/assets/icon.jpg
+2023-04-06 17:17:20 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"message_show":"all"}
+2023-04-06 17:17:20 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"showList":"rootPath"}
+2023-04-06 17:17:20 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /favicon.ico
+2023-04-06 17:17:29 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"message_add":"dwe"}
+2023-04-06 17:17:56 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"message_add":"test 02"}
+2023-04-06 17:17:58 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /
+2023-04-06 17:17:58 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.css
+2023-04-06 17:17:58 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.css
+2023-04-06 17:17:58 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /login.css
+2023-04-06 17:17:58 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.css
+2023-04-06 17:17:58 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.css
+2023-04-06 17:17:58 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /index.css
+2023-04-06 17:17:58 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /pvue.js
+2023-04-06 17:17:58 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.js
+2023-04-06 17:17:58 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.js
+2023-04-06 17:17:58 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.js
+2023-04-06 17:17:58 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.js
+2023-04-06 17:17:58 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /src/assets/icon.jpg
+2023-04-06 17:18:00 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"message_show":"all"}
+2023-04-06 17:18:00 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"showList":"rootPath"}
+2023-04-06 17:18:00 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /favicon.ico
+2023-04-07 15:31:38 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /
+2023-04-07 15:31:38 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.css
+2023-04-07 15:31:38 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.css
+2023-04-07 15:31:38 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /login.css
+2023-04-07 15:31:38 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.css
+2023-04-07 15:31:38 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /index.css
+2023-04-07 15:31:38 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /pvue.js
+2023-04-07 15:31:38 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.css
+2023-04-07 15:31:38 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.js
+2023-04-07 15:31:38 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.js
+2023-04-07 15:31:38 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.js
+2023-04-07 15:31:38 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /src/assets/icon.jpg
+2023-04-07 15:31:39 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.js
+2023-04-07 15:31:40 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"showList":"rootPath"}
+2023-04-07 15:31:40 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"message_show":"all"}
+2023-04-07 15:31:40 DEBUG /home/wucz/test/MyWeb/src/message.cpp 74 SQL execute error! message:2006,MySQL server has gone away
+2023-04-07 15:31:50 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"message_add":"请问"}
+2023-04-07 15:31:50 DEBUG /home/wucz/test/MyWeb/src/message.cpp 33 SQL execute error! message:2006,MySQL server has gone away
+2023-04-07 15:31:51 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"message_add":"请问"}
+2023-04-07 15:31:51 DEBUG /home/wucz/test/MyWeb/src/message.cpp 33 SQL execute error! message:2006,MySQL server has gone away
+2023-04-07 15:33:24 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /
+2023-04-07 15:33:24 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.css
+2023-04-07 15:33:24 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.css
+2023-04-07 15:33:24 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /login.css
+2023-04-07 15:33:24 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /index.css
+2023-04-07 15:33:24 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.css
+2023-04-07 15:33:24 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.css
+2023-04-07 15:33:24 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.js
+2023-04-07 15:33:24 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.js
+2023-04-07 15:33:24 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.js
+2023-04-07 15:33:24 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /pvue.js
+2023-04-07 15:33:25 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /src/assets/icon.jpg
+2023-04-07 15:33:25 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.js
+2023-04-07 15:33:26 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"showList":"rootPath"}
+2023-04-07 15:33:26 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"message_show":"all"}
+2023-04-07 15:33:26 DEBUG /home/wucz/test/MyWeb/src/message.cpp 74 SQL execute error! message:2006,MySQL server has gone away
+2023-04-07 15:33:26 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /favicon.ico
+2023-04-07 15:33:30 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"message_add":"123"}
+2023-04-07 15:33:30 DEBUG /home/wucz/test/MyWeb/src/message.cpp 33 SQL execute error! message:2006,MySQL server has gone away
+2023-04-07 15:33:32 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.css
+2023-04-07 15:33:32 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /index.css
+2023-04-07 15:33:32 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.css
+2023-04-07 15:33:32 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /login.css
+2023-04-07 15:33:32 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.css
+2023-04-07 15:33:32 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.css
+2023-04-07 15:33:32 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.js.map
+2023-04-07 15:34:33 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /
+2023-04-07 15:34:33 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.css
+2023-04-07 15:34:33 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.css
+2023-04-07 15:34:33 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /index.css
+2023-04-07 15:34:33 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /login.css
+2023-04-07 15:34:33 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.css
+2023-04-07 15:34:33 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.css
+2023-04-07 15:34:33 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /music.js
+2023-04-07 15:34:33 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /pvue.js
+2023-04-07 15:34:33 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.js
+2023-04-07 15:34:33 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /show.js
+2023-04-07 15:34:33 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /message.js
+2023-04-07 15:34:33 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /src/assets/icon.jpg
+2023-04-07 15:34:35 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /swiper-bundle.js.map
+2023-04-07 15:34:35 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"message_show":"all"}
+2023-04-07 15:34:35 DEBUG /home/wucz/test/MyWeb/src/message.cpp 74 SQL execute error! message:2006,MySQL server has gone away
+2023-04-07 15:34:35 DEBUG /home/wucz/test/MyWeb/main.cpp 53 GET /favicon.ico
+2023-04-07 15:34:35 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"showList":"rootPath"}
+2023-04-07 15:34:41 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"message_add":"123"}
+2023-04-07 15:34:41 DEBUG /home/wucz/test/MyWeb/src/message.cpp 33 SQL execute error! message:2006,MySQL server has gone away
+2023-04-07 15:34:41 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+{"message_add":"123"}
+2023-04-07 15:34:41 DEBUG /home/wucz/test/MyWeb/src/message.cpp 33 SQL execute error! message:2006,MySQL server has gone away
+2023-04-07 15:34:59 DEBUG /home/wucz/test/MyWeb/main.cpp 60 
+POST /post
+------WebKitFormBoundary02ohDeLhC653Ukds
+Content-Disposition: form-data; name="fileName"; filename="永不妥协计划.h"
+Content-Type: text/plain
+
+0-4	   二本+锅+大理石甲+草根+火腿棒+猪皮头+帐篷
+5-7    骑牛探路+蓝蘑菇林拿活木
+8-11   星杖+魔光+唤灵
+12-14  准备龙蝇物资
+15     龙蝇
+电羊工厂
+
+
+旺达
+锅		no
+帐篷	no
+火腿棒	yes
+石墙	yes
+打包三本和材料下远古，穿建造护符先四本再警告表
+不要忘记铥矿碎片
+
+------WebKitFormBoundary02ohDeLhC653Ukds--
+

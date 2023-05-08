@@ -6,15 +6,28 @@ namespace dya
 {
 ////////////////////////////////////////////////////////////////////
 DatebasePool::DatebasePool(const char *loginInfo, const char *charset, int maxConnect, int timeout)
-: m_timeout(timeout), m_charset(charset), m_loginInfo(loginInfo), m_maxConnect(maxConnect),
-m_pool(new st_conn[maxConnect])
+: m_timeout(timeout),
+m_charset(charset),
+m_loginInfo(loginInfo),
+m_maxConnect(maxConnect),
+m_pool(new st_conn[maxConnect]),
+m_check([this]{
+    while (!this->m_isExit)
+    {
+        this->checkTimeout();
+        // 睡眠若干秒之后继续检查
+        std::this_thread::sleep_for(std::chrono::seconds(this->m_timeout));
+    }
+})
 {
     int ret = connection().connecttodb(loginInfo, charset);
     assert(ret == 0);
+    m_check.detach();
 }
 
 DatebasePool::~DatebasePool()
 {
+    m_isExit = true;
     destroy();
 }
 
@@ -22,9 +35,12 @@ connection* DatebasePool::getConnect()
 {
     for (int i=0; i<m_maxConnect; ++i)
     {
+        // 尝试加锁成功，说明这是一个空闲的连接。这里的空闲是指没有被其他线程使用的意思
         if (m_pool[i].m_mutex.try_lock())
         {
-            if (m_pool[i].m_conn.m_state == false)
+            // 空闲连接可能长时间没有使用，被检查线程给close了，需要重连数据库
+            // 被检查线程close的连接，它的atime会清零
+            if (m_pool[i].m_atime == 0)
             {
                 int ret = m_pool[i].m_conn.connecttodb(m_loginInfo.c_str(), m_charset.c_str());
                 if (ret != 0)
@@ -62,7 +78,7 @@ void DatebasePool::checkTimeout()
         if (!m_pool[i].m_mutex.try_lock())
             continue;
         // 查看是否超时
-        if (UTCTime-m_pool[i].m_atime <= m_timeout)
+        if ((UTCTime-m_pool[i].m_atime) <= m_timeout)
             continue;
 
         m_pool[i].m_conn.disconnect();

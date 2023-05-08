@@ -15,14 +15,23 @@
     <link rel="stylesheet" href="./show.css">
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./message.css">
+
+	<style>
+		.records {
+			position: relative;
+			top: 45%;
+			font-size: 8px;
+		}
+	</style>
 </head>
 <body>
+
     <!-- Swiper -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
 
         <!----------------------登录---------------------->
-        <div class="swiper-slide">1
+        <div class="swiper-slide">
             <!--
             <form action="" class="login">
                 <p>管理员登录</p>
@@ -33,10 +42,12 @@
             -->
             <form action="" class="login">
                 <h1 class="tt">登录</h1>
-                <input type="text" placeholder="用户名">
-                <input type="password" placeholder="密码">
-                <input type="submit" class="btn tt" value="登 录" >
+                <input class="accountNumber" type="text" placeholder="账号">
+                <input class="password" type="password" placeholder="密码">
+                <input id="login_btn" class="btn tt" type="button"  value="登 录" >
             </form>
+
+	<a class="records" href="https://beian.miit.gov.cn/?spm=5176.27804673.J_9220772140.51.284573654v38AH#/Integrated/index" target="_blank">浙ICP备2022030943号</a>
         </div>
 
         <!----------------------上传和下载---------------------->
@@ -113,5 +124,8 @@
 
     <!--留言-->
     <script src= "./message.js"></script>
+
+    <!--登录-->
+    <script src= "./login.js"></script>
 </body>
 </html>

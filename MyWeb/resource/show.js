@@ -34,7 +34,7 @@ function addOneRow(filename, date, type, size){ //获取到表格的对象
 // 页面加载事件
 document.addEventListener("DOMContentLoaded", function(){
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://dx191dya.com:5099/post");
+    xhr.open("POST", "http://dx191dya.com/post");
     xhr.send('{"showList":"rootPath"}');
     xhr.onreadystatechange = function(){
         if (xhr.readyState === 4)
@@ -58,7 +58,7 @@ upload.addEventListener("click", function(){
     let form = document.querySelector(".select");
     let fd = new FormData(form);
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://dx191dya.com:5099/post");
+    xhr.open("POST", "http://dx191dya.com/post");
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.send(fd);
     xhr.onreadystatechange = function(){

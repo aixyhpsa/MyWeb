@@ -38,14 +38,19 @@ int main()
 
     dya::Singleton<dya::DatebasePool>::instance("8.130.105.64,root,bilibili2022,test0715,3306", "utf8", 10, 10);
     LOG_INIT("/home/wucz/test/MyWeb/log/main", true);
-    LOG_SET_LEVEL(dya::Logger::DEBUG);
+    LOG_SET_LEVEL(dya::Logger::INFO);
     // 指定端口
-    dya::Reactor master(5099);
+    dya::Reactor master(80);
 
     auto fn = [](std::string &readBuff)->std::string
     {
         dya::Http http;
         http.parser(readBuff);
+
+        if (http.find("Cookie"))
+        {
+            LOG_DEBUG("Cookie : %s\n", http["Cookie"].c_str());
+        }
 
         // GET请求
         if (http["url"].compare("/post") != 0)
@@ -56,6 +61,14 @@ int main()
         }
         else
         {
+            if (http.find("Cookie") == false)
+            {
+                if (http["body"].compare(2, 2, "--") == 0)
+                {
+                    dya::Post post("No Cookie");
+                    return post.getResponse();
+                }
+            }
             // POST请求
             LOG_DEBUG("\nPOST %s\n%s\n", http["url"].c_str(), http["body"].c_str());
             dya::Post post(http["body"]);

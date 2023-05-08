@@ -1,0 +1,179 @@
+2023-04-07 17:40:45 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /
+2023-04-07 17:40:45 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /music.css
+2023-04-07 17:40:45 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /swiper-bundle.css
+2023-04-07 17:40:45 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /login.css
+2023-04-07 17:40:45 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /index.css
+2023-04-07 17:40:45 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /message.css
+2023-04-07 17:40:45 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /show.css
+2023-04-07 17:40:45 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /pvue.js
+2023-04-07 17:40:45 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /music.js
+2023-04-07 17:40:45 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /swiper-bundle.js
+2023-04-07 17:40:45 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /show.js
+2023-04-07 17:40:45 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /message.js
+2023-04-07 17:40:45 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /src/assets/icon.jpg
+2023-04-07 17:40:47 DEBUG /home/wucz/test/MyWeb/main.cpp 63 
+POST /post
+{"showList":"rootPath"}
+2023-04-07 17:40:47 DEBUG /home/wucz/test/MyWeb/main.cpp 63 
+POST /post
+{"message_show":"all"}
+2023-04-07 18:09:12 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /
+2023-04-07 18:09:12 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /music.css
+2023-04-07 18:09:12 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /swiper-bundle.css
+2023-04-07 18:09:12 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /show.css
+2023-04-07 18:09:12 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /login.css
+2023-04-07 18:09:12 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /index.css
+2023-04-07 18:09:12 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /pvue.js
+2023-04-07 18:09:12 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /message.css
+2023-04-07 18:09:12 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /music.js
+2023-04-07 18:09:13 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /show.js
+2023-04-07 18:09:13 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /swiper-bundle.js
+2023-04-07 18:09:13 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /src/assets/icon.jpg
+2023-04-07 18:09:13 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /login.js
+2023-04-07 18:09:13 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /message.js
+2023-04-07 18:09:14 DEBUG /home/wucz/test/MyWeb/main.cpp 63 
+POST /post
+{"showList":"rootPath"}
+2023-04-07 18:09:14 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /favicon.ico
+2023-04-07 18:09:14 DEBUG /home/wucz/test/MyWeb/main.cpp 63 
+POST /post
+{"message_show":"all"}
+2023-04-07 18:09:42 DEBUG /home/wucz/test/MyWeb/main.cpp 63 
+POST /post
+{"accountNumber":"root", "password":"368751429QQ"}
+2023-04-07 18:09:42 DEBUG /home/wucz/test/MyWeb/src/login.cpp 81 select count(password) from user where accountNumber=? and password=?
+2023-04-07 18:10:36 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:10:36 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /login.css
+2023-04-07 18:10:36 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:10:36 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /swiper-bundle.css
+2023-04-07 18:10:36 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:10:36 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /index.css
+2023-04-07 18:10:36 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:10:36 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /show.css
+2023-04-07 18:10:36 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:10:36 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /music.css
+2023-04-07 18:10:36 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:10:36 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /message.css
+2023-04-07 18:10:36 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:10:36 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /swiper-bundle.js.map
+2023-04-07 18:10:47 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:10:47 DEBUG /home/wucz/test/MyWeb/main.cpp 63 
+POST /post
+
+2023-04-07 18:15:25 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:15:25 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /
+2023-04-07 18:15:25 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:15:25 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /show.css
+2023-04-07 18:15:25 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:15:25 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /music.css
+2023-04-07 18:15:25 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:15:25 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /swiper-bundle.css
+2023-04-07 18:15:25 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:15:25 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /pvue.js
+2023-04-07 18:15:25 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:15:25 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /music.js
+2023-04-07 18:15:25 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:15:25 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /swiper-bundle.js
+2023-04-07 18:15:25 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:15:25 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /show.js
+2023-04-07 18:15:25 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:15:25 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /message.js
+2023-04-07 18:15:25 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:15:25 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /login.js
+2023-04-07 18:16:28 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /
+2023-04-07 18:16:29 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /music.css
+2023-04-07 18:16:29 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /swiper-bundle.css
+2023-04-07 18:16:29 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /pvue.js
+2023-04-07 18:16:29 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /show.css
+2023-04-07 18:16:29 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /login.css
+2023-04-07 18:16:29 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /swiper-bundle.js
+2023-04-07 18:16:30 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /show.js
+2023-04-07 18:16:30 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /music.js
+2023-04-07 18:16:30 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /message.js
+2023-04-07 18:16:30 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /login.js
+2023-04-07 18:16:48 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /
+2023-04-07 18:16:48 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /music.css
+2023-04-07 18:16:48 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /login.css
+2023-04-07 18:16:48 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /swiper-bundle.css
+2023-04-07 18:16:48 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /show.css
+2023-04-07 18:16:48 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /index.css
+2023-04-07 18:16:48 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /pvue.js
+2023-04-07 18:16:48 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /music.js
+2023-04-07 18:16:48 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /swiper-bundle.js
+2023-04-07 18:16:49 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /show.js
+2023-04-07 18:16:49 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /message.js
+2023-04-07 18:16:49 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /login.js
+2023-04-07 18:17:30 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /message.css
+2023-04-07 18:17:30 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /login.css
+2023-04-07 18:17:30 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /show.css
+2023-04-07 18:17:30 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /swiper-bundle.css
+2023-04-07 18:17:30 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /music.css
+2023-04-07 18:17:30 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /index.css
+2023-04-07 18:18:43 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /
+2023-04-07 18:18:43 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /music.css
+2023-04-07 18:18:43 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /swiper-bundle.css
+2023-04-07 18:18:43 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /index.css
+2023-04-07 18:18:43 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /show.css
+2023-04-07 18:18:43 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /login.css
+2023-04-07 18:18:43 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /message.css
+2023-04-07 18:18:43 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /pvue.js
+2023-04-07 18:18:43 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /music.js
+2023-04-07 18:18:43 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /swiper-bundle.js
+2023-04-07 18:18:44 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /show.js
+2023-04-07 18:18:44 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /message.js
+2023-04-07 18:18:44 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /login.js
+2023-04-07 18:18:44 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /src/assets/icon.jpg
+2023-04-07 18:18:45 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /swiper-bundle.js.map
+2023-04-07 18:18:45 DEBUG /home/wucz/test/MyWeb/main.cpp 63 
+POST /post
+{"showList":"rootPath"}
+2023-04-07 18:18:45 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /favicon.ico
+2023-04-07 18:18:45 DEBUG /home/wucz/test/MyWeb/main.cpp 63 
+POST /post
+{"message_show":"all"}
+2023-04-07 18:19:34 DEBUG /home/wucz/test/MyWeb/main.cpp 63 
+POST /post
+{"accountNumber":"root", "password":"368751429QQ"}
+2023-04-07 18:19:34 DEBUG /home/wucz/test/MyWeb/src/login.cpp 81 select count(password) from user where accountNumber=? and password=?
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /swiper-bundle.css
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /message.css
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /show.css
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /music.css
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /login.css
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /index.css
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /pvue.js
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /music.js
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /show.js
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:20:06 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /swiper-bundle.js
+2023-04-07 18:20:07 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:20:07 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /message.js
+2023-04-07 18:20:07 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:20:07 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /login.js
+2023-04-07 18:20:07 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:20:07 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /src/assets/icon.jpg
+2023-04-07 18:20:08 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:20:08 DEBUG /home/wucz/test/MyWeb/main.cpp 63 
+POST /post
+{"showList":"rootPath"}
+2023-04-07 18:20:08 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:20:08 DEBUG /home/wucz/test/MyWeb/main.cpp 63 
+POST /post
+{"message_show":"all"}
+2023-04-07 18:20:08 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:20:08 DEBUG /home/wucz/test/MyWeb/main.cpp 56 GET /favicon.ico
+2023-04-07 18:33:59 DEBUG /home/wucz/test/MyWeb/main.cpp 51 Cookie : token=123
+2023-04-07 18:33:59 DEBUG /home/wucz/test/MyWeb/main.cpp 63 
+POST /post
+

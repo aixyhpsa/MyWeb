@@ -133,7 +133,7 @@ CMakeFiles/main.dir/src/login.cpp.o: /home/wucz/test/MyWeb/src/login.cpp \
  /usr/include/c++/10/system_error \
  /usr/include/c++/10/x86_64-redhat-linux/bits/error_constants.h \
  /usr/include/c++/10/stdexcept /usr/include/c++/10/bits/std_mutex.h \
- /usr/include/c++/10/bits/unique_lock.h \
+ /usr/include/c++/10/bits/unique_lock.h /usr/include/c++/10/thread \
  /home/wucz/test/MyWeb/src/../tools/_mysql.h /usr/include/string.h \
  /usr/include/strings.h /usr/include/c++/10/stdlib.h \
  /www/server/mysql/include/mysql.h \
@@ -162,7 +162,7 @@ CMakeFiles/main.dir/src/login.cpp.o: /home/wucz/test/MyWeb/src/login.cpp \
  /usr/include/c++/10/bits/istream.tcc /usr/include/c++/10/bits/codecvt.h \
  /usr/include/c++/10/x86_64-redhat-linux/bits/basic_file.h \
  /usr/include/c++/10/x86_64-redhat-linux/bits/c++io.h \
- /usr/include/c++/10/bits/fstream.tcc /usr/include/c++/10/thread \
+ /usr/include/c++/10/bits/fstream.tcc \
  /home/wucz/test/MyWeb/src/../tools/_mqueue.hpp \
  /usr/include/c++/10/condition_variable /usr/include/c++/10/queue \
  /usr/include/c++/10/deque /usr/include/c++/10/bits/stl_deque.h \

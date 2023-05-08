@@ -2,6 +2,7 @@
 #include <mutex>
 #include <string>
 #include <memory>
+#include <thread>
 #include "_mysql.h"
 #include "_singleton.hpp"
 
@@ -29,11 +30,13 @@ private :
     ~DatebasePool();
     int getUTCTime();   
 private :
-    std::unique_ptr<st_conn[]> m_pool;
-    std::string m_loginInfo;
-    std::string m_charset;
-    int m_timeout = 0;
-    int m_maxConnect = 0;
+    std::unique_ptr<st_conn[]> m_pool;      // 数据库连接数组
+    std::string m_loginInfo;                // 数据库登录信息
+    std::string m_charset;                  // 数据库字符集
+    int m_timeout = 0;                      // 超时时间
+    int m_maxConnect = 0;                   // 最大连接数
+    std::thread m_check;                    // 检查连接是否超时的线程           
+    int m_isExit= false;                    // 析构时关闭上一行提到的线程的标志位，std::thread好像没有线程取消功能，所以这样操作
 };
 ////////////////////////////////////////////////////////////////////
 }
